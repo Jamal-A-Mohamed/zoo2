@@ -11,10 +11,10 @@
   <title>Heroic Features - Start Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/vendor/bootstrap/css/bootstrap.min.css') }}">
   <!-- Custom styles for this template -->
-  <link href="css/heroic-features.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/heroic-features.css.css') }}">
 
 </head>
 
@@ -128,8 +128,11 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 </body>
 
