@@ -1,8 +1,9 @@
 from flask_pymongo import PyMongo
 from flask import Flask, render_template, request, redirect, url_for
+from markdown import markdown as md
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/Online_Store"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/zoo"
 mongo = PyMongo(app)
 collection = mongo.db["animals"]
 
@@ -17,6 +18,7 @@ def index() :
     animal = collection.find_one(animaltoGet)
     print(animal)
     return render_template('index.html', animal=animal)
+
 
 
 
