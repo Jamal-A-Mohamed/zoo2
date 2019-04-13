@@ -16,8 +16,10 @@ animaltoGet = {'CommonName' : "Chipmunk"}
 @app.route("/")
 def index() :
     animal = collection.find_one(animaltoGet)
+    animal['html_summary'] = md(animal['briefSummary'])
     print(animal)
-    return render_template('index.html', animal=animal)
+
+    return render_template('index.html', animal=animal, html_x="<ul><li>item</ul>")
 
 
 
