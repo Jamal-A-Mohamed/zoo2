@@ -8,13 +8,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Heroic Features - Start Bootstrap Template</title>
+  <title>Login</title>
 
   <!-- Bootstrap core CSS -->
 
   <link rel="stylesheet" href="{{ url_for('static', filename='css/vendor/bootstrap/css/bootstrap.min.css') }}">
   <!-- Custom styles for this template -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/heroic-features.css') }}">
+
 
 
 </head>
@@ -55,6 +56,25 @@
         <p class="error"><strong>Error:</strong> {{ error }}
       {% endif %}
     </div>
+
+ <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; WWW ZOO</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/heroic-features.css') }}">
+
+</body>
+
   </body>
 </html>
 

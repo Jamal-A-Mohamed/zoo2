@@ -2,14 +2,14 @@
     "_id": {
         "$oid": "5cabbcf7b2d41053b953b14a"
     },
-    "Scientificname": "",
-    "Briefsummary": "",
+    "ScientificName": "",
+    "BriefSummary": "",
     "CommonName": "",
-    "Funfacts": "",
+    "FunFacts": "",
     "Diet": "",
     "Zone": "",
     "Carenotes": {
-        "Feedingschedule": "",
+        "FeedingSchedule": "",
         "Food": "",
         "Notes": ""
     },
