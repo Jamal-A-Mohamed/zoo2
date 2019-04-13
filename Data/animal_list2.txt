@@ -1,0 +1,198 @@
+Common ostrich
+Elegant crested tinamou
+Southern cassowary
+Helmeted guineafowl
+Wild turkey
+Bamboo partridge
+Red junglefowl
+Southern screamer
+Black-necked swan
+Mute swan
+Marbled teal
+African pygmy goose
+Ruddy duck
+American flamingo
+Nicobar pigeon
+Pied imperial pigeon
+Victoria crowned pigeon
+Pheasant pigeon
+Black-naped fruit-dove
+Beautiful fruit dove
+Jambu fruit-dove
+White-throated ground-dove
+Tawny frogmouth
+Lady Ross’ turaco
+Roadrunner
+Kori bustard
+Buff-crested bustard
+Sunbittern
+Buff-banded rail
+Black crowned-crane
+White-naped crane
+Sandhill crane
+Red-crowned crane
+Blue crane
+Wood stork
+White stork
+Roseate spoonbill
+Cape thick-knee
+Masked lapwing
+Blacksmith plover
+Common barn owl
+Eurasian eagle owl
+Great horned owl
+Eastern screech owl
+Spectacled owl
+Barred owl
+Black vulture
+Cinereous vulture
+Golden eagle
+Red-tailed hawk
+Red-shouldered hawk
+Harris’ hawk
+Secretary bird
+Speckled mousebird
+Red-billed hornbill
+Southern ground hornbill
+Green woodhoopoe
+Blue-bellied roller
+Laughing kookaburra
+Blue-crowned motmot
+Green aracari
+Chestnut-mandibled toucan
+Bearded barbet
+Coconut lorikeet
+Australian rainbow lorikeet
+Forsten’s lorikeet
+Marigold lorikeet
+Vasa parrot
+Green-winged macaw
+Sulphur-crested cockatoo
+Blue-faced honeyeater
+Plush-crested jay
+White-crested laughing thrush
+Violet-backed starling
+Emerald starling
+Superb starling
+Snowy-headed robin chat
+Red-billed leiothrix
+White-headed buffalo weaver
+Taveta golden weaver
+Red-crested cardinal
+Tarantula
+Madagascar hissing cockroach
+Honeybee
+Bony fish
+Rainbow sharkminnow
+Black tetra
+Neon tetra
+Bristlenose catfish
+Platyfish
+Peacock eel
+Alligator snapping turtle
+Box turtle
+Eastern box turtle
+Coahuila box turtle
+Black-nobbed map turtle
+Diamondback terrapin
+Radiated tortoise
+Aldabra giant tortoise
+Desert tortoise
+Gopher tortoise
+Home’s hingeback tortoise
+African pancake tortoise
+Hermann’s tortoise
+Egyptian tortoise
+Chinese three-striped box turtle
+Japanese pond turtle
+Philippine sail-finned lizard
+Green crested basilisk
+San Esteban Island chuckwalla
+New Caledonia giant gecko
+Prehensile-tailed skink
+Blue-tongued skink
+Caiman lizard
+Scheltopusik/glass lizard
+Mexican beaded lizard
+Komodo dragon/Ora
+Woma
+Carpet/diamond python
+Royal/ball python
+Boa constrictor
+Emerald tree boa
+Garden tree boa
+Green anaconda
+Baja ratsnake
+Eastern indigo snake
+Cave snake
+Red-tailed ratsnake
+Milksnake
+Black-banded trinket snake
+Corn snake
+Western ratsnake
+Rhinoceros snake
+Eastern hognose snake
+Copperhead
+Cottonmouth
+Eastern diamondback rattlesnake
+Timber rattlesnake
+American alligator
+Asian giant toad
+Green and black poison frog
+Yellow-headed poison frog
+White’s tree frog
+African clawed frog
+Solomon Islands leaf frog
+African bullfrog
+Virginia opossum
+Brush-tailed rat-kangaroo
+Lesser Madagascar hedgehog tenrec
+African elephant
+Southern three-banded armadillo
+Hoffmann’s two-toed sloth
+Giant anteater
+Crowned lemur
+Ring-tailed lemur
+Cotton-top tamarin
+Common squirrel monkey
+Black howler
+Black-handed spider monkey
+De Brazza’s monkey
+Lar gibbon
+Sumatran orangutan
+Prevost’s squirrel
+Woodchuck
+Naked mole-rat
+Cape porcupine
+Sand cat
+Black-footed cat
+Wild cat
+Serval
+Bobcat
+Pallas’s cat
+Fishing cat
+Lion
+Jaguar
+Coyote
+Grey fox
+Red fox
+Fennec fox
+North American black bear
+California sea lion
+North American river otter
+Giant otter
+Ferret
+Striped skunk
+White-nosed coati
+Red panda
+Plains zebra
+White rhinoceros
+Red River hog
+Guinea hog
+Hippopotamus
+Giraffe
+Goat
+Sheep
+Red-flanked duiker
+Yellow-backed duiker
+Blue duiker
