@@ -1,1 +1,10 @@
-{"_id":{"$oid":"5cacd84db2d41053b953b14e"},"firstname":"","lastname":"","username":"","password":"","email":""}
+{
+    "_id": {
+        "$oid": "5cacd84db2d41053b953b14e"
+    },
+    "firstname": "",
+    "lastname": "",
+    "username": "",
+    "password": "",
+    "email": ""
+}
