@@ -10,7 +10,7 @@ collection = mongo.db["animals"]
 # empty array
 arr = []
 
-animaltoGet = {'CommonName' : "Chipmunk"}
+animaltoGet = {'CommonName' : "Addax"}
 
 
 @app.route("/")

@@ -1,6 +1,7 @@
 """
 Author: Dan Stone
 Date: 4/13/2019
+
 This script will load a list of animals from text file and download ram (or other animals)
 and save the results as json and images in image dir.
 

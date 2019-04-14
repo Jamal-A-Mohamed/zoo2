@@ -22,7 +22,7 @@ def main():
 
         url = animal["ImageURL"]
 
-        img_path = cwd / 'Images' / file.stem
+        img_path = cwd / 'Static' / 'Images' / file.stem
 
         image_loc = download_image(url, img_path)
 
