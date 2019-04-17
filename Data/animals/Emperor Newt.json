@@ -3,5 +3,14 @@
     "BriefSummary": "Tylototriton shanjing, the emperor newt, Mandarin newt or Mandarin salamander, is a highly toxic newt native to China.",
     "WikiContents": "Tylototriton shanjing, the emperor newt, Mandarin newt or Mandarin salamander, is a highly toxic newt native to China.\n\n\n== Description ==\nTylototriton shanjing can grow up to 8 inches (20 cm) long. It has a ridged orange head from which a single orange ridge runs along its back. This ridge is lined with two parallel rows of orange bumps on a black background. The tail and legs are entirely orange. The shade of the orange can be variable.\n\n\n== Defense ==\nTylototriton shanjing might seem like easy prey because of its bright coloration, however, it is generally nocturnal, and the top of its vertebrae and skull have especially thick bone. Additionally, the orange warts on its back are poison glands, and when the newt is grabbed, the tips of the ribs will squeeze out poison from the glands. Emperor newts have enough toxin to kill approximately 7,500 mice. Although poisonous, these newts are generally safe for human handling given that they are handled carefully and gently.\n\n\n== Range and habitat ==\nEmperor newts live in central, western, and southern Yunnan, China, between 1,000 feet (300 m) to 2,500 feet (760 m) feet above sea level.They inhabit pools and slow-moving streams in subtropical forests.\n\n\n== Diet ==\nThe emperor newt usually eats small invertebrates in its environment, such as crickets and worms. Emperor newts in captivity are typically given wax worms, crickets, and earth worms.\n\n\n== Taxonomy ==\nFor a long time, emperor newts were classified together with the Himalayan newt (T. verrucosus).\n\n\n== References ==\n\n\n== External links ==\nhttp://reptilopolis.kanak.fr/urodeles-f24/tylotriton-shanjingnussbaum-brodie-et-yang-1995-t196.htm",
     "ImageURL": "EmperorNewt.png",
-    "Source": "https://en.wikipedia.org/wiki/Tylototriton_shanjing"
+    "Source": "https://en.wikipedia.org/wiki/Tylototriton_shanjing",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Amphibia",
+        "Order": "Caudata",
+        "Family": "Salamandridae",
+        "Genus": "Tylototriton",
+        "Species": "T.\u00a0shanjing"
+    }
 }

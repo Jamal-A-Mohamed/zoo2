@@ -3,5 +3,15 @@
     "BriefSummary": "Montivipera raddei is a venomous viper species found in Armenia, Turkey, Iran, Azerbaijan, and possibly also Iraq. There are two subspecies currently recognized.",
     "WikiContents": "Montivipera raddei is a venomous viper species found in Armenia, Turkey, Iran, Azerbaijan, and possibly also Iraq. There are two subspecies currently recognized.\n\n\n== Etymology ==\nThe specific name, raddei, is in honor of German naturalist Gustav Radde.\n\n\n== Common names ==\nCommon names for M. raddei include rock viper, Radde's mountain viper, Kurdistan viper (Vipera raddei kurdistanica), Armenian mountain viper, Armenian viper, Radde's viper, Armenian mountain adder, and Zanjhani viper.\n\n\n== Description ==\nAdult males of M. raddei grow to a maximum total length (including tail) of 99 cm (39 in). Adult females are smaller with a maximum total length of 79 cm (31 in).\n\n\t\t\n\n\n== Geographic range ==\nM. raddei is found in Eastern Turkey, northwestern Iran, Armenia, Azerbaijan, and probably Iraqi Kurdistan. This species is parapatric or slightly sympatric with M. wagneri in the Aras river valley, Kars Province, eastern Turkey.\nThe type locality is listed as \"Kasikoparan in Armenien \". According to Nilson and Andr\u00e9n (1986), Kasikoparan, Armenia (40\u00b002'N, 43\u00b026'E) is now part of Turkey (Kazikkiran [Kazikkoparan]), Tuzluca, Kars Province, northeastern Anatolia).\n\n\n== Conservation status ==\nM. raddei is classified as Lower Risk with a subcategory of least concern (LR/lc) according to the IUCN Red List of Threatened Species (v2.3, 1994). This indicates that it has been evaluated, but that it does not satisfy the criteria for any of the categories Critically Endangered, Endangered or Vulnerable. Also, it does not qualify for Conservation Dependent or Near Threatened either. Year assessed: 1996.It is, however, listed as a protected species (Appendix III) under the Berne Convention.\n\n\n== Taxonomy ==\nM. raddei is apparently closely related to Montivipera. r. albicornuta and M. latifii; together they sometimes form the Montivipera raddei complex. There are two subspecies: the nominate from Armenia, Azerbaijan, eastern Turkey, northwest Iran, and adjacent Turkmenistan, and M. r. kurdistanica from southeast Turkey and adjacent Iraq and Iran.\n\n\n== See also ==\nList of viperine species and subspecies\nViperinae by common name\nViperinae by taxonomic synonyms\nSnakebite\n\n\n== References ==\n\n\n== Further reading ==\n\n\n== External links ==\nMontivipera raddei at the Reptarium.cz Reptile Database. Accessed 20 August 2016.\nVipera (Montivipera) raddei raddei at Checklist of Armenia's Amphibians and Reptiles, Tadevosyan's Herpetological Resources. Accessed 20 August 2016.",
     "ImageURL": "ArmenianViper.jpg",
-    "Source": "https://en.wikipedia.org/wiki/Montivipera_raddei"
+    "Source": "https://en.wikipedia.org/wiki/Montivipera_raddei",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Reptilia",
+        "Order": "Squamata",
+        "Suborder": "Serpentes",
+        "Family": "Viperidae",
+        "Genus": "Montivipera",
+        "Species": "M.\u00a0raddei"
+    }
 }

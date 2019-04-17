@@ -3,5 +3,14 @@
     "BriefSummary": "Chrysochus auratus, the dogbane beetle, of eastern North America, is a member of the leaf beetle subfamily Eumolpinae. It is primarily found east of the Rocky Mountains. One of the brightest in its family, it is iridescent blue-green with a metallic copper, golden or crimson shine. Its diet mainly consists of dogbane (Apocynum), specificially Apocynum cannabinum and Apocynum androsaemifolium, and occasionally it eats milkweed. It measures between 8 and 11 mm (less than 0.5 inches) and has a convex, oval shape.At least two regions of sympatry between C. auratus and Chrysochus cobaltinus have been documented in western North America.",
     "WikiContents": "Chrysochus auratus, the dogbane beetle, of eastern North America, is a member of the leaf beetle subfamily Eumolpinae. It is primarily found east of the Rocky Mountains. One of the brightest in its family, it is iridescent blue-green with a metallic copper, golden or crimson shine. Its diet mainly consists of dogbane (Apocynum), specificially Apocynum cannabinum and Apocynum androsaemifolium, and occasionally it eats milkweed. It measures between 8 and 11 mm (less than 0.5 inches) and has a convex, oval shape.At least two regions of sympatry between C. auratus and Chrysochus cobaltinus have been documented in western North America.\n\n\n== Gallery ==\n\n\n== References ==\n\n\n== External links ==\nOne gorgeous beetle: Dogbane leaf beetle, Chrysochus auratus Bug of the Week",
     "ImageURL": "DogbaneLeafBeetle.jpg",
-    "Source": "https://en.wikipedia.org/wiki/Chrysochus_auratus"
+    "Source": "https://en.wikipedia.org/wiki/Chrysochus_auratus",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Euarthropoda",
+        "Class": "Insecta",
+        "Order": "Coleoptera",
+        "Family": "Chrysomelidae",
+        "Genus": "Chrysochus",
+        "Species": "C.\u00a0auratus"
+    }
 }

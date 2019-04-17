@@ -3,5 +3,14 @@
     "BriefSummary": "Scarites subterraneus, known generally as the big-headed ground beetle or pedunculate ground beetle, is a species of ground beetle in the family Carabidae. It is found in the Caribbean, Central America, and North America.",
     "WikiContents": "Scarites subterraneus, known generally as the big-headed ground beetle or pedunculate ground beetle, is a species of ground beetle in the family Carabidae. It is found in the Caribbean, Central America, and North America.\n\n\n== References ==\n\n\n== Further reading ==\n\n\n== External links ==",
     "ImageURL": "PedunculateGroundBeetle.jpg",
-    "Source": "https://en.wikipedia.org/wiki/Scarites_subterraneus"
+    "Source": "https://en.wikipedia.org/wiki/Scarites_subterraneus",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Euarthropoda",
+        "Class": "Insecta",
+        "Order": "Coleoptera",
+        "Family": "Carabidae",
+        "Genus": "Scarites",
+        "Species": "S.\u00a0subterraneus"
+    }
 }

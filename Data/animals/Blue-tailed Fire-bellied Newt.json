@@ -3,5 +3,13 @@
     "BriefSummary": "The fire belly newts  or fire newts are a genus (Cynops) of newts native to Japan and China. All of the species show bright yellow or red bellies, but this feature is not unique to this genus. Their skin contains a toxin that can be harmful if ingested.",
     "WikiContents": "The fire belly newts  or fire newts are a genus (Cynops) of newts native to Japan and China. All of the species show bright yellow or red bellies, but this feature is not unique to this genus. Their skin contains a toxin that can be harmful if ingested.\n\n\n== Species ==\nChenggong fire belly newt (Cynops chenggongensis )*\nChuxiong fire-bellied newt or blue-tailed fire belly newt (Cynops cyanurus)*\nJapanese sword-tail newt (Cynops ensicauda)\nFuding fire belly newt (Cynops fudingensis)*\nChinese fire belly newt (Cynops orientalis)*\nDayang newt or Dayang fire belly newt (Cynops orphicus)*\nJapanese fire belly newt (Cynops pyrrhogaster)\n\u0086Yunnan lake newt (Cynops wolterstorffi) (probably extinct)*(A * means that the newt was moved into the genus Hypselotriton )\n\n\n== Taxonomic controversy ==\nThe genus Cynops has been suggested to be due for a split, with the Chinese species being placed in a separate genus from the Japanese ones. The species Cynops cyanurus is at the centre of all this. There is much debate about the validity of C. cyanurus and C. chenggongensis. All the known captive animals could be something different from C. cyanurus, as they do not entirely match the original description of the species. The only known animals that match that are animals originating from Chemnitz Zoo, but the F2 animals have not bred well, which could suggest they are in fact a hybrid of C. cyanurus and C. chenggongensis or an undescribed Cynops species.\n\n\n== References ==",
     "ImageURL": "BluetailedFirebelliedNewt.jpg",
-    "Source": "https://en.wikipedia.org/wiki/Fire_belly_newts"
+    "Source": "https://en.wikipedia.org/wiki/Fire_belly_newts",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Amphibia",
+        "Order": "Urodela",
+        "Family": "Salamandridae",
+        "Genus": "CynopsTschudi, 1839"
+    }
 }
