@@ -3,5 +3,13 @@
     "BriefSummary": "Hydrophilus  is a genus of beetles in the family Hydrophilidae, the water scavenger beetles. There are about 48 species in three subgenera in the genus: Hydrophilus, Dibolocelus, and Temnopterus.",
     "WikiContents": "Hydrophilus  is a genus of beetles in the family Hydrophilidae, the water scavenger beetles. There are about 48 species in three subgenera in the genus: Hydrophilus, Dibolocelus, and Temnopterus.\n\n\n== List of species ==\nHydrophilus aculeatus (Solier, 1834)\nHydrophilus acuminatus Motschulsky, 1853\nHydrophilus albipes Castelnau, 1840\nHydrophilus aterrimus (Eschscholtz, 1822)\nHydrophilus atricapillus Duftschmid, 1805\nHydrophilus bilineatus\nHydrophilus brevispina Fairmaire, 1879\nHydrophilus caschmirensis  Redtenbacher, 1844\nHydrophilus ensifer Brull\u00e9, 1837\nHydrophilus foveolatus (R\u00e9gimbart, 1901)\nHydrophilus guarani (Bachmann, 1966)\nHydrophilus hastatus (Herbst, 1779)\nHydrophilus indicus (Bedel, 1891)\nHydrophilus infrequens Watts, 1988\nHydrophilus latipalpus Castelnau, 1840\nHydrophilus macronyx (R\u00e9gimbart, 1901)\nHydrophilus ovatus Gemminger and Harold 1868\nHydrophilus palpalis Brull\u00e9, 1838\nHydrophilus pedipalpus (Bedel, 1891)\nHydrophilus piceus (Linnaeus, 1758) \u2013 great silver water beetle\nHydrophilus picicornis Chevrolat, 1863\nHydrophilus pistaceus Laporte de Castelnau, 1840\nHydrophilus rufus Scopoli, 1763\nHydrophilus smaragdinus Brull\u00e9, 1837\nHydrophilus triangularis Say, 1823 \u2013 giant water scavenger beetle\nHydrophilus tricolor Herbst, 1784\nHydrophilus wattsi Hansen, 1999\n\n\n== References ==",
     "ImageURL": "GiantWaterScavengerBeetle.jpg",
-    "Source": "https://en.wikipedia.org/wiki/Hydrophilus_(beetle)"
+    "Source": "https://en.wikipedia.org/wiki/Hydrophilus_(beetle)",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Arthropoda",
+        "Class": "Insecta",
+        "Order": "Coleoptera",
+        "Family": "Hydrophilidae",
+        "Genus": "HydrophilusGeoffroy, 1762"
+    }
 }

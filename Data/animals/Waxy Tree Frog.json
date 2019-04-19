@@ -3,5 +3,14 @@
     "BriefSummary": "Phyllomedusa sauvagii, commonly known as the waxy monkey tree frog, is a species of frog in the family Hylidae. It is native to South America, where it occurs in Argentina, Bolivia, Paraguay and Brazil.This species is arboreal, living in the vegetation of the Gran Chaco. It breeds during the rainy season. It lays eggs along the middle of a leaf blade and folds the leaf, sandwiching the eggs inside. Its nest is attached to a branch suspended over a stream, so the hatching tadpoles drop into the water.Like other species in the subfamily Phyllomedusinae, it has physiological and behavioural adaptations to limit water loss, including reducing water loss through the skin by lipid secretions, excretion of uric acid (uricotelism), and diurnal torpor. Lipid secretions are produced in a special type of cutaneous gland, and are spread over the surface of the skin by the legs in a complex sequence of wiping movements.\nThe frogs generate many different pharmacologically active peptides as part of the defensive secretions covering their skin. Several of these peptides have found scientific uses as research ligands, including the opioid peptide dermorphin.\n\n",
     "WikiContents": "Phyllomedusa sauvagii, commonly known as the waxy monkey tree frog, is a species of frog in the family Hylidae. It is native to South America, where it occurs in Argentina, Bolivia, Paraguay and Brazil.This species is arboreal, living in the vegetation of the Gran Chaco. It breeds during the rainy season. It lays eggs along the middle of a leaf blade and folds the leaf, sandwiching the eggs inside. Its nest is attached to a branch suspended over a stream, so the hatching tadpoles drop into the water.Like other species in the subfamily Phyllomedusinae, it has physiological and behavioural adaptations to limit water loss, including reducing water loss through the skin by lipid secretions, excretion of uric acid (uricotelism), and diurnal torpor. Lipid secretions are produced in a special type of cutaneous gland, and are spread over the surface of the skin by the legs in a complex sequence of wiping movements.\nThe frogs generate many different pharmacologically active peptides as part of the defensive secretions covering their skin. Several of these peptides have found scientific uses as research ligands, including the opioid peptide dermorphin.\n\n\n== References ==\n\n\n== External links ==\n Data related to Phyllomedusa sauvagii at Wikispecies\n Media related to Phyllomedusa sauvagii at Wikimedia Commons",
     "ImageURL": "WaxyTreeFrog.jpg",
-    "Source": "https://en.wikipedia.org/wiki/Phyllomedusa_sauvagii"
+    "Source": "https://en.wikipedia.org/wiki/Phyllomedusa_sauvagii",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Lissamphibia",
+        "Order": "Anura",
+        "Family": "Hylidae",
+        "Genus": "Phyllomedusa",
+        "Species": "P.\u00a0sauvagii"
+    }
 }

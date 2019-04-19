@@ -3,5 +3,14 @@
     "BriefSummary": "Prevost's squirrel or Asian tri-colored squirrel (Callosciurus prevostii) is a species of rodent in the family Sciuridae. It is found in forest in the Thai-Malay Peninsula, Sumatra, Borneo and nearby smaller islands, with an introduced population in northern Sulawesi. They eat fruits, nuts, seeds, buds, flowers, insects and bird eggs. It has been observed feeding on durians such as Durio graveolens.  These squirrels carry the fruits far from the tree and drop the seeds when finished with their meal. This seed distribution away from the parent plant increases survival for the fruiting plant species.\n\nThe \"typical\" subspecies (for example C. p. prevostii from the Thai-Malay Peninsula) of Prevost's squirrel are among the most colourful mammals in the world with their black upperparts and tail, reddish-orange underparts, and whitish thighs and flanks. The markings in some subspecies are duller, and C. prevostii pluto from northeastern Borneo is reddish-orange below and black above (no whitish thighs or flanks).",
     "WikiContents": "Prevost's squirrel or Asian tri-colored squirrel (Callosciurus prevostii) is a species of rodent in the family Sciuridae. It is found in forest in the Thai-Malay Peninsula, Sumatra, Borneo and nearby smaller islands, with an introduced population in northern Sulawesi. They eat fruits, nuts, seeds, buds, flowers, insects and bird eggs. It has been observed feeding on durians such as Durio graveolens.  These squirrels carry the fruits far from the tree and drop the seeds when finished with their meal. This seed distribution away from the parent plant increases survival for the fruiting plant species.\n\nThe \"typical\" subspecies (for example C. p. prevostii from the Thai-Malay Peninsula) of Prevost's squirrel are among the most colourful mammals in the world with their black upperparts and tail, reddish-orange underparts, and whitish thighs and flanks. The markings in some subspecies are duller, and C. prevostii pluto from northeastern Borneo is reddish-orange below and black above (no whitish thighs or flanks).\n\n\n== References ==\n\nThorington, R. W. Jr. and R. S. Hoffman. 2005. Family Sciuridae. Pp. 754\u2013818 in Mammal Species of the World a Taxonomic and Geographic Reference. D. E. Wilson and D. M. Reeder eds. Johns Hopkins University Press, Baltimore.\nPrevost's Squirrel at Animal Diversity Web",
     "ImageURL": "PrevostsSquirrel.jpg",
-    "Source": "https://en.wikipedia.org/wiki/Prevost%27s_squirrel"
+    "Source": "https://en.wikipedia.org/wiki/Prevost%27s_squirrel",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Mammalia",
+        "Order": "Rodentia",
+        "Family": "Sciuridae",
+        "Genus": "Callosciurus",
+        "Species": "C.\u00a0prevostii"
+    }
 }
