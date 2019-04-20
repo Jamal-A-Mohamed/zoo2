@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="" method="POST" enctype=multipart/form-data>
+
+    <h2>Common Name</h2>
+    <input type="text" name="CommonName" size="60" value="{{animal.CommonName}}"><br>
+    <h2>Scientific Name</h2>
+    <input type="text" name="ScientificName" size="60" value="{{ animal.ScientificName }}"><br>
+    <h2>Brief Summary</h2>
+    <input type="text" name="BriefSummary" size="60" value="{{animal.BriefSummary}}"><br>
+    <h2>Fun Facts</h2>
+    <input type="text" name="FunFacts" size="60" value="{{ animal.FunFacts }}"><br><br>
+    <h2>Diet</h2>
+    <input type="text" name="Diet" size="60" value="{{ animal.Diet }}"><br><br>
+    <h2>Habitat</h2>
+    <input type="text" name="Habitat" size="60" value="{{ animal.Habitat }}"><br>
+    <h2>Care Notes</h2>
+    <h3>FeedingSchedule</h3>
+    <input type="text" name="FeedingSchedule" size="60" value="{{carenotes.FeedingSchedule}}"><br>
+    <h3>Food to feed</h3>
+    <input type="text" name="Food" size="60" value="{{ carenotes.Food }}"><br><br>
+    <h3>Notes</h3>
+    <input type="text" name="Notes" size="60" value="{{ carenotes.Notes }}"><br><br>
+    <h2>Upload New Image</h2>
+    <input type="file" name="image"/><br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
