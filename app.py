@@ -1,9 +1,10 @@
+import os
+
 import bcrypt as bcrypt
 from flask import Flask, redirect, render_template, request, session, url_for
 from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
-import os
 
 UPLOAD_FOLDER = os.getcwd() + '/Static/Images'
 ALLOWED_EXTENSIONS = ('png', 'jpg', 'jpeg', 'gif')
@@ -94,7 +95,7 @@ def register():
         if existing_user is None :
             hashpass = bcrypt.hashpw(request.form['pass'].encode('utf-8'), bcrypt.gensalt())
             users.insert(
-                {'name' : request.form['username'], 'password' : hashpass, 'firstname' : request.form['firstname'], \
+                {'name' : request.form['username'], 'password' : hashpass, 'firstname' : request.form['firstname'],
                  'lastname' : request.form['lastname']})
             session['username'] = request.form['username']
 
@@ -112,11 +113,14 @@ def edit_animal(animal_name):
     animal = animals.find_one({'CommonName': animal_name})
 
     if request.method == 'GET':
-        # if session['username'] is not None:
+        if 'username' in session :
+            # if session['username'] is not None:
             carenotes = None
             if "Carenotes" in animal:
                 carenotes = animal["Carenotes"]
             return render_template('edit_animal.html', animal=animal, carenotes=carenotes) #username=session['username']
+        else :
+            return "You are not logged in"
 
     update_dict = form2dict(request.form, image=request.files['image'])
 
@@ -131,7 +135,7 @@ def edit_animal(animal_name):
 def edit():
     if request.method == 'GET':
         # if session['username'] is not None:
-            return render_template('edit_animal.html', animal=None, carenotes=None) #username=session['username']
+        return render_template('edit_animal.html', animal=None, carenotes=None)
     animals = mongo.db.animals
 
     update_dict = form2dict(request.form, image=request.files['image'])
