@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <h1>{{animal.CommonName}}</h1>
+
+    <h3>{{ animal.ScientificName }}</h3>
+    <img class="img-thumbnail" src=/static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
+             , height="325">
+    {{animal.BriefSummary | safe}}
+
+    {{ animal.FunFacts | safe }}
+
+    {{ animal.Habitat | safe }}
+
+    {{ animal.Diet | safe }}
+
+
+    <h2>Care Notes: </h2>
+        {{ carenotes.FeedingSchedule | safe }}
+
+    {{ carenotes.Food | safe }}
+
+    {{ carenotes.Notes | safe }}
+
+    <a href="{{ url_for('edit') + '/' + animal.CommonName}}">
+    Edit page for {{ animal.CommonName }}
+</a>
+
+{#    <input type="text" name="BriefSummary" size="60" value="{{animal.BriefSummary}}"><br>#}
+{#    <textarea style="width:80%" rows="12" name="BriefSummary">{{animal.BriefSummary}}</textarea>#}
+{#    <h3>Fun Facts</h3>#}
+{#    <textarea style="width:80%" rows="4" name="FunFacts">{{ animal.FunFacts }}</textarea>#}
+{##}
+{#    <h3>Diet</h3>#}
+{#    <textarea style="width:80%" rows="4" name="Diet">{{ animal.Diet }}</textarea>#}
+
+{#    <br><h2>Care Notes</h2>#}
+{#    <h4>Feeding Schedule</h4>#}
+{#    <input type="text" name="FeedingSchedule" size="60" value="{{carenotes.FeedingSchedule}}"><br>#}
+{#    <h4>Food to feed</h4>#}
+{#    <input type="text" name="Food" size="60" value="{{ carenotes.Food }}"><br>#}
+{#    <h4>Notes</h4>#}
+{#    <input type="text" name="Notes" size="60" value="{{ carenotes.Notes }}"><br><br>#}
+
+
+
+{% endblock %}

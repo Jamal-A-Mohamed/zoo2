@@ -1,37 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block body %}
 
     <form action="" method="POST" enctype=multipart/form-data>
 
     <h2>Common Name</h2>
     <input type="text" name="CommonName" size="60" value="{{animal.CommonName}}"><br>
-    <h2>Scientific Name</h2>
+    <h3>Scientific Name</h3>
     <input type="text" name="ScientificName" size="60" value="{{ animal.ScientificName }}"><br>
-    <h2>Brief Summary</h2>
-    <input type="text" name="BriefSummary" size="60" value="{{animal.BriefSummary}}"><br>
-    <h2>Fun Facts</h2>
-    <input type="text" name="FunFacts" size="60" value="{{ animal.FunFacts }}"><br><br>
-    <h2>Diet</h2>
-    <input type="text" name="Diet" size="60" value="{{ animal.Diet }}"><br><br>
-    <h2>Habitat</h2>
-    <input type="text" name="Habitat" size="60" value="{{ animal.Habitat }}"><br>
-    <h2>Care Notes</h2>
-    <h3>FeedingSchedule</h3>
+    <h3>Brief Summary</h3>
+{#    <input type="text" name="BriefSummary" size="60" value="{{animal.BriefSummary}}"><br>#}
+    <textarea style="width:80%" rows="12" name="BriefSummary">{{animal.BriefSummary}}</textarea>
+    <h3>Fun Facts</h3>
+    <textarea style="width:80%" rows="4" name="FunFacts">{{ animal.FunFacts }}</textarea>
+
+    <h3>Diet</h3>
+    <textarea style="width:80%" rows="4" name="Diet">{{ animal.Diet }}</textarea>
+    <h3>Habitat</h3>
+    <textarea style="width:80%" rows="4" name="Habitat">{{ animal.Habitat }}</textarea>
+    <br><h2>Care Notes</h2>
+    <h4>Feeding Schedule</h4>
     <input type="text" name="FeedingSchedule" size="60" value="{{carenotes.FeedingSchedule}}"><br>
-    <h3>Food to feed</h3>
-    <input type="text" name="Food" size="60" value="{{ carenotes.Food }}"><br><br>
-    <h3>Notes</h3>
+    <h4>Food to feed</h4>
+    <input type="text" name="Food" size="60" value="{{ carenotes.Food }}"><br>
+    <h4>Notes</h4>
     <input type="text" name="Notes" size="60" value="{{ carenotes.Notes }}"><br><br>
-    <h2>Upload New Image</h2>
+    <h3>Upload New Image</h3>
     <input type="file" name="image"/><br>
     <br>
     <input type="submit" value="Submit">
 </form>
 
-</body>
-</html>
+{% endblock %}

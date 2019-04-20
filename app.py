@@ -1,7 +1,7 @@
 import bcrypt as bcrypt
 from flask import Flask, redirect, render_template, request, session, url_for
 from flask_pymongo import PyMongo
-from markdown import markdown as md
+from markdown import markdown
 from werkzeug.utils import secure_filename
 import os
 
@@ -24,7 +24,6 @@ animaltoGet = {'CommonName' : "Addax"}
 @app.route("/")
 def index() :
     animal = collection.find_one(animaltoGet)
-    print(animal)
     animal['html_summary'] = md(animal['BriefSummary'])
     print(animal)
 
@@ -45,6 +44,21 @@ def index() :
 
 # app.config['DEBUG'] = True
 
+@app.route('/animal/<animal_name>')
+def animal_page(animal_name):
+    animal = collection.find_one(animaltoGet)
+
+    convert_md = ('BriefSummary', 'FunFacts', "Diet", "Habitat")
+
+    for field in convert_md:
+        animal[field] = md(animal[field], field)
+
+    carenotes = None
+    if "Carenotes" in animal:
+        carenotes = animal["Carenotes"]
+        for field in carenotes.keys():
+            carenotes[field] = md(carenotes[field], field, heading='h4')
+    return render_template('animal.html', animal=animal, carenotes=carenotes)
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
@@ -67,7 +81,7 @@ def login():
 
 
 @app.route('/register', methods=['POST', 'GET'])
-def register() :
+def register():
     if request.method == 'POST' :
         if (request.form['username'] == "") :
             return "username cannot be empty"
@@ -90,7 +104,6 @@ def register() :
                         </div>')
 
     return render_template('register.html')
-
 
 
 @app.route('/edit/<animal_name>', methods=['POST', 'GET'])
@@ -126,6 +139,7 @@ def edit():
 
     animals.insert_one(update_dict)
 
+
     return redirect(url_for('edit'))
 
 
@@ -157,7 +171,7 @@ def form2dict(form, image=None, addName=True):
     return update_dict
 
 @app.route('/logout')
-def logout() :
+def logout():
     # remove the username from the session if it is there
     if 'username' in session :
         session.pop('username', None)
@@ -165,6 +179,12 @@ def logout() :
 
     else :
         return "Your are not logged in"
+
+
+def md(text, header=None, heading='h2'):
+    if header and heading in ('h1','h2','h3','h4'):
+        return f'<{heading}>{header}</{heading}>' + markdown(text)
+    return markdown(text)
 
 
 
