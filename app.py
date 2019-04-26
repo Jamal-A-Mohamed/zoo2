@@ -16,38 +16,38 @@ app.secret_key = 'mysecret'
 mongo = PyMongo(app)
 collection = mongo.db["animals"]
 
-# empty array
-arr = []
-
 animaltoGet = {'CommonName' : "Addax"}
 
 
 @app.route("/")
 def index() :
-    animal = collection.find_one(animaltoGet)
+    animal = collection.find_one_or_404(animaltoGet)
     animal['html_summary'] = md(animal['BriefSummary'])
     print(animal)
 
     return render_template('index.html', animal=animal)
 
 
-# # Route for handling the login page logic
-# @app.route('/login', methods=['GET', 'POST'])
-# def login():
-#     error = None
-#     if request.method == 'POST':
-#         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
-#             error = 'Invalid Credentials. Please try again.'
-#         else:
-#             return redirect(url_for('index'))
-#     return render_template('login.html')
+@app.route('/search', methods=['POST', 'GET'])
+def search() :
+    if request.method == 'POST' :
+        error = None
+        carenotes = None
+        animal = collection.find_one({'CommonName' : request.form['animalname']})
+        if animal is None :
+            return render_template('layout.html', error='<div class="alert alert-danger">animal not found<strong></strong>\
+                                  </div>')
+        else :
+            return render_template('animal.html', animal=animal, carenotes=carenotes)
 
 
-# app.config['DEBUG'] = True
+
 
 @app.route('/animal/<animal_name>')
 def animal_page(animal_name):
-    animal = collection.find_one(animaltoGet)
+    # animals = mongo.db.animals
+
+    animal = collection.find_one({'CommonName' : animal_name})
 
     convert_md = ('BriefSummary', 'FunFacts', "Diet", "Habitat")
 
@@ -65,6 +65,7 @@ def animal_page(animal_name):
 def login():
     if request.method == 'POST' :
         users = mongo.db.users
+
         login_user = users.find_one({'name' : request.form['username']})
         print("Logged in user: ", login_user)
         if login_user :
@@ -80,6 +81,16 @@ def login():
                         </div>')
     return render_template('login.html')
 
+
+@app.route('/logout')
+def logout() :
+    # remove the username from the session if it is there
+    if 'username' in session :
+        session.pop('username', None)
+        return redirect(url_for('index'))
+
+    else :
+        return "Your are not logged in"
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
@@ -174,15 +185,7 @@ def form2dict(form, image=None, addName=True):
 
     return update_dict
 
-@app.route('/logout')
-def logout():
-    # remove the username from the session if it is there
-    if 'username' in session :
-        session.pop('username', None)
-        return redirect(url_for('index'))
 
-    else :
-        return "Your are not logged in"
 
 
 def md(text, header=None, heading='h2'):
