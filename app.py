@@ -1,4 +1,8 @@
-import bcrypt as bcrypt
+#!/usr/bin/python3
+import sys, os
+
+
+import bcrypt 
 from flask import Flask, redirect, render_template, request, session, url_for
 from flask_pymongo import PyMongo
 from markdown import markdown
@@ -46,12 +50,13 @@ def index() :
 
 @app.route('/animal/<animal_name>')
 def animal_page(animal_name):
-    animal = collection.find_one(animaltoGet)
+    animal = collection.find_one({"CommonName": animal_name})
 
     convert_md = ('BriefSummary', 'FunFacts', "Diet", "Habitat")
 
     for field in convert_md:
-        animal[field] = md(animal[field], field)
+        if field in animal:
+            animal[field] = md(animal[field], field)
 
     carenotes = None
     if "Carenotes" in animal:
@@ -160,8 +165,8 @@ def form2dict(form, image=None, addName=True):
     """return elements to update from form as a dict for update or insert to mongo"""
     update_fields = ["ScientificName", "BriefSummary", "FunFacts", "Diet", "Habitat"] + ["CommonName"] * addName
     care_fields = ["FeedingSchedule", "Food", "Notes"]
-    care_fields = {field: form.get(field) for field in care_fields}
-    update_dict = {field: form.get(field) for field in update_fields}
+    care_fields = {field: form.get(field) for field in care_fields if len(form.get(field)) > 0}
+    update_dict = {field: form.get(field) for field in update_fields  if len(form.get(field)) > 0}
     update_dict["Carenotes"] = care_fields
 
     filename = upload_image(file=image, upload_dir=app.config['UPLOAD_FOLDER'])
@@ -190,4 +195,4 @@ def md(text, header=None, heading='h2'):
 
 if __name__ == '__main__' :
     app.secret_key = 'mysecret'
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5002)
