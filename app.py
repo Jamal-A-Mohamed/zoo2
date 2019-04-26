@@ -8,6 +8,7 @@ from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
 import os
+from random import choice
 
 UPLOAD_FOLDER = os.getcwd() + '/Static/Images'
 ALLOWED_EXTENSIONS = ('png', 'jpg', 'jpeg', 'gif')
@@ -23,7 +24,7 @@ collection = mongo.db["animals"]
 arr = []
 
 animaltoGet = {'CommonName' : "Addax"}
-
+animal_list = [animal['CommonName'] for animal in collection.find({})]
 
 @app.route("/")
 def index() :
@@ -47,6 +48,11 @@ def index() :
 
 
 # app.config['DEBUG'] = True
+
+@app.route('/random')
+def random_animal():
+    rand_animal = choice(animal_list)
+    return redirect(url_for('animal_page', animal_name=f"{rand_animal}"))
 
 @app.route('/animal/<animal_name>')
 def animal_page(animal_name):
