@@ -34,6 +34,17 @@ def index() :
 
     return render_template('index.html', animal=animal)
 
+@app.route('/search', methods=['POST', 'GET'])
+def search() :
+    if request.method == 'POST' :
+        error = None
+        carenotes = None
+        animal = collection.find_one({'CommonName' : request.form['animalname']})
+        if animal is None :
+            return render_template('layout.html', error='<div class="alert alert-danger">animal not found<strong></strong>\
+                                  </div>')
+        else :
+            return render_template('animal.html', animal=animal, carenotes=carenotes)
 
 # # Route for handling the login page logic
 # @app.route('/login', methods=['GET', 'POST'])
@@ -89,6 +100,18 @@ def login():
             return render_template('login.html', error='<div class="alert alert-danger"> Wrong username or password<strong></strong>\
                         </div>')
     return render_template('login.html')
+ 
+
+@app.route('/logout')
+def logout() :
+    # remove the username from the session if it is there
+    if 'username' in session :
+        session.pop('username', None)
+        return redirect(url_for('index'))
+
+    else :
+        return "Your are not logged in"
+
 
 
 @app.route('/register', methods=['POST', 'GET'])
@@ -123,11 +146,14 @@ def edit_animal(animal_name):
     animal = animals.find_one({'CommonName': animal_name})
 
     if request.method == 'GET':
-        # if session['username'] is not None:
+        if 'username' in session :
+            # if session['username'] is not None:
             carenotes = None
             if "Carenotes" in animal:
                 carenotes = animal["Carenotes"]
             return render_template('edit_animal.html', animal=animal, carenotes=carenotes) #username=session['username']
+        else :
+            return "You are not logged in"
 
     update_dict = form2dict(request.form, image=request.files['image'])
 
