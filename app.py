@@ -1,10 +1,14 @@
-import os
+#!/usr/bin/python3
+import sys, os
 
-import bcrypt as bcrypt
+
+import bcrypt 
 from flask import Flask, redirect, render_template, request, session, url_for
 from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
+import os
+from random import choice
 
 UPLOAD_FOLDER = os.getcwd() + '/Static/Images'
 ALLOWED_EXTENSIONS = ('png', 'jpg', 'jpeg', 'gif')
@@ -16,17 +20,19 @@ app.secret_key = 'mysecret'
 mongo = PyMongo(app)
 collection = mongo.db["animals"]
 
-animaltoGet = {'CommonName' : "Addax"}
+# empty array
+arr = []
 
+animaltoGet = {'CommonName' : "Addax"}
+animal_list = [animal['CommonName'] for animal in collection.find({})]
 
 @app.route("/")
 def index() :
-    animal = collection.find_one_or_404(animaltoGet)
+    animal = collection.find_one(animaltoGet)
     animal['html_summary'] = md(animal['BriefSummary'])
     print(animal)
 
     return render_template('index.html', animal=animal)
-
 
 @app.route('/search', methods=['POST', 'GET'])
 def search() :
@@ -40,19 +46,34 @@ def search() :
         else :
             return render_template('animal.html', animal=animal, carenotes=carenotes)
 
+# # Route for handling the login page logic
+# @app.route('/login', methods=['GET', 'POST'])
+# def login():
+#     error = None
+#     if request.method == 'POST':
+#         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
+#             error = 'Invalid Credentials. Please try again.'
+#         else:
+#             return redirect(url_for('index'))
+#     return render_template('login.html')
 
 
+# app.config['DEBUG'] = True
+
+@app.route('/random')
+def random_animal():
+    rand_animal = choice(animal_list)
+    return redirect(url_for('animal_page', animal_name=f"{rand_animal}"))
 
 @app.route('/animal/<animal_name>')
 def animal_page(animal_name):
-    # animals = mongo.db.animals
-
-    animal = collection.find_one({'CommonName' : animal_name})
+    animal = collection.find_one({"CommonName": animal_name})
 
     convert_md = ('BriefSummary', 'FunFacts', "Diet", "Habitat")
 
     for field in convert_md:
-        animal[field] = md(animal[field], field)
+        if field in animal:
+            animal[field] = md(animal[field], field)
 
     carenotes = None
     if "Carenotes" in animal:
@@ -65,7 +86,6 @@ def animal_page(animal_name):
 def login():
     if request.method == 'POST' :
         users = mongo.db.users
-
         login_user = users.find_one({'name' : request.form['username']})
         print("Logged in user: ", login_user)
         if login_user :
@@ -80,7 +100,7 @@ def login():
             return render_template('login.html', error='<div class="alert alert-danger"> Wrong username or password<strong></strong>\
                         </div>')
     return render_template('login.html')
-
+ 
 
 @app.route('/logout')
 def logout() :
@@ -91,6 +111,8 @@ def logout() :
 
     else :
         return "Your are not logged in"
+
+
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
@@ -106,7 +128,7 @@ def register():
         if existing_user is None :
             hashpass = bcrypt.hashpw(request.form['pass'].encode('utf-8'), bcrypt.gensalt())
             users.insert(
-                {'name' : request.form['username'], 'password' : hashpass, 'firstname' : request.form['firstname'],
+                {'name' : request.form['username'], 'password' : hashpass, 'firstname' : request.form['firstname'], \
                  'lastname' : request.form['lastname']})
             session['username'] = request.form['username']
 
@@ -146,7 +168,7 @@ def edit_animal(animal_name):
 def edit():
     if request.method == 'GET':
         # if session['username'] is not None:
-        return render_template('edit_animal.html', animal=None, carenotes=None)
+            return render_template('edit_animal.html', animal=None, carenotes=None) #username=session['username']
     animals = mongo.db.animals
 
     update_dict = form2dict(request.form, image=request.files['image'])
@@ -175,8 +197,8 @@ def form2dict(form, image=None, addName=True):
     """return elements to update from form as a dict for update or insert to mongo"""
     update_fields = ["ScientificName", "BriefSummary", "FunFacts", "Diet", "Habitat"] + ["CommonName"] * addName
     care_fields = ["FeedingSchedule", "Food", "Notes"]
-    care_fields = {field: form.get(field) for field in care_fields}
-    update_dict = {field: form.get(field) for field in update_fields}
+    care_fields = {field: form.get(field) for field in care_fields if len(form.get(field)) > 0}
+    update_dict = {field: form.get(field) for field in update_fields  if len(form.get(field)) > 0}
     update_dict["Carenotes"] = care_fields
 
     filename = upload_image(file=image, upload_dir=app.config['UPLOAD_FOLDER'])
@@ -185,7 +207,15 @@ def form2dict(form, image=None, addName=True):
 
     return update_dict
 
+@app.route('/logout')
+def logout():
+    # remove the username from the session if it is there
+    if 'username' in session :
+        session.pop('username', None)
+        return redirect(url_for('index'))
 
+    else :
+        return "Your are not logged in"
 
 
 def md(text, header=None, heading='h2'):
@@ -197,4 +227,4 @@ def md(text, header=None, heading='h2'):
 
 if __name__ == '__main__' :
     app.secret_key = 'mysecret'
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5002)
