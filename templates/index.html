@@ -1,75 +1,89 @@
 {% extends "layout.html" %}
+
+{% block javascript %}
+    <script src="/Static/js/jquery.ellipsis.js"></script>
+{% endblock %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/heroic-features.css') }}">
+
+
 {% block body %}
+
+
 
   <!-- Page Content -->
   <div class="container">
 
     <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
-      <h1 class="display-3">A Warm Welcome to the zoo!</h1>
+    <header class="jumbotron my-3">
+      <h4 class="display-3 text-center">A Warm Welcome to the zoo!</h4>
       <p class="lead"></p>
-      <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
     </header>
 
     <!-- Page Features -->
     <div class="row text-center">
 
-      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
             <img class="card-img-top" src=http://3.89.175.127/Static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
                  , height="325">
           <div class="card-body">
             <h4 class="card-title">{{animal.CommonName}}</h4>
+              <div class="box">
             <p class="card-text">{{animal.html_summary | safe}}</p>
+                  </div>
 
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More </a>
+              <a href="{{ url_for('animal_page',animal_name=animal.CommonName) }}" class="btn btn-primary">
+                Find Out More </a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+            <img class="card-img-top" src=http://3.89.175.127/Static/Images/{{ animal2.ImageURL }} alt={{ animal2.CommonName }}, width="500"
+                 , height="325">
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+            <h4 class="card-title">{{animal2.CommonName}}</h4>
+              <div class="box">
+            <p class="card-text">{{animal2.html_summary | safe}}</p>
+                  </div>
+
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a href="{{ url_for('animal_page',animal_name=animal2.CommonName) }}" class="btn btn-primary">
+                Find Out More </a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+            <img class="card-img-top" src=http://3.89.175.127/Static/Images/{{ animal3.ImageURL }} alt={{ animal3.CommonName }}, width="500"
+                 , height="325">
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            <h4 class="card-title">{{animal3.CommonName}}</h4>
+              <div class="box">
+            <p class="card-text">{{animal3.html_summary | safe}}</p>
+                  </div>
+
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a href="{{ url_for('animal_page',animal_name=animal3.CommonName) }}" class="btn btn-primary">
+                Find Out More </a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
 
     </div>
     <!-- /.row -->
+
+              <a href="{{ url_for('glossary')}}">
+            All the animals at the Zoo!
+</a><br>
 
   </div>
   <!-- /.container -->
@@ -79,6 +93,7 @@
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; WWW ZOO</p>
+        <p class="m-0 text-center"><a href="https://www.freepik.com/free-photos-vectors/banner">Banner vector created by freepik - www.freepik.com</a></p>
     </div>
     <!-- /.container -->
   </footer>
@@ -88,5 +103,15 @@
   <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
   <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
+<script>
+    ('.box').ellipsis({
+  lines: 3,             // force ellipsis after a certain number of lines. Default is 'auto'
+  ellipClass: 'ellip',  // class used for ellipsis wrapper and to namespace ellip line
+  responsive: true      // set to true if you want ellipsis to update on window resize. Default is false
+});
+    {#('.box--responsive').ellipsis({ responsive: true });#}
+</script>
 
 {% endblock %}
+
+
