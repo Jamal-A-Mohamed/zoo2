@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-import sys, os
 
+import os
+from random import choice
 
-import bcrypt 
-from flask import Flask, redirect, render_template, request, session, url_for, abort, flash
+import bcrypt
+from flask import Flask, redirect, render_template, request, session, url_for, abort, Response, json
 from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
-import os
-from random import choice
 
 UPLOAD_FOLDER = os.getcwd() + '/Static/Images'
 ALLOWED_EXTENSIONS = ('png', 'jpg', 'jpeg', 'gif')
@@ -19,6 +18,7 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/zoo"
 app.secret_key = 'mysecret'
 mongo = PyMongo(app)
 collection = mongo.db["animals"]
+NAMES = ["abc", "abcd", "abcde", "abcdef"]
 
 # empty array
 arr = []
@@ -27,40 +27,51 @@ animaltoGet = {'CommonName' : "Addax"}
 animal_list = [animal['CommonName'] for animal in collection.find({})]
 
 @app.route("/")
-def index():
-
-    animal = collection.find_one({'CommonName' : choice(animal_list)})
-    animal2 = collection.find_one({'CommonName' : choice(animal_list)})
-    animal3 = collection.find_one({'CommonName' : choice(animal_list)})
+def index() :
+    animal = collection.find_one(animaltoGet)
     animal['html_summary'] = md(animal['BriefSummary'])
-    animal2['html_summary'] = md(animal2['BriefSummary'])
-    animal3['html_summary'] = md(animal3['BriefSummary'])
+    print(animal)
 
-    return render_template('index.html', animal=animal, animal2=animal2, animal3=animal3)
+    return render_template('index.html', animal=animal)
 
 
-@app.route("/glossary")
-def glossary() :
-    return render_template('glossary.html', animal_list=animal_list)
+@app.route("/autocomplete")
+def autcomplete() :
+    return render_template('autocomplete.html', animal_list=animal_list)
 
 @app.route('/search', methods=['POST', 'GET'])
 def search() :
     if request.method == 'POST' :
         return redirect(url_for('animal_page', animal_name=request.form['animalname']))
 
-# # Route for handling the login page logic
-# @app.route('/login', methods=['GET', 'POST'])
-# def login():
-#     error = None
-#     if request.method == 'POST':
-#         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
-#             error = 'Invalid Credentials. Please try again.'
-#         else:
-#             return redirect(url_for('index'))
-#     return render_template('login.html')
+
+#
+# @app.route('/autocomplete', methods=['GET'])
+# def autocomplete() :
+#     search = request.args.get('q')
+#     print(search)
+#
+#     if search and len(search) >= 3:
+#         results = [animal for animal in animal_list if search in animal]
+#         print(results)
+#         return jsonify(matching_results=results)
+#     return "NOTHING IN THE SEARCH BAR"
 
 
-# app.config['DEBUG'] = True
+NAMES = ["abc", "abcd", "abcde", "abcdef"]
+
+
+@app.route('/animalname', methods=['GET'])
+def autocomplete() :
+    search = request.args.get('animalname')
+
+    app.logger.debug(search)
+    print(search)
+
+    print(Response(json.dumps(NAMES)))
+    return Response(json.dumps(animal_list), mimetype='application/json')
+
+
 
 @app.route('/random/')
 @app.route('/random')
@@ -91,9 +102,6 @@ def animal_page(animal_name):
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    if 'username' in session:
-        return "User already logged in"
-
     if request.method == 'POST' :
         users = mongo.db.users
         login_user = users.find_one({'name' : request.form['username']})
@@ -229,5 +237,4 @@ def md(text, header=None, heading='h2'):
 
 if __name__ == '__main__' :
     app.secret_key = 'mysecret'
-    # app.run(host="0.0.0.0", port=5002)
-    app.run(host="127.0.0.1", port=5002)
+    app.run(host="127.0.0.1", port=5003)
