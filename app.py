@@ -207,15 +207,7 @@ def form2dict(form, image=None, addName=True):
 
     return update_dict
 
-@app.route('/logout')
-def logout():
-    # remove the username from the session if it is there
-    if 'username' in session :
-        session.pop('username', None)
-        return redirect(url_for('index'))
 
-    else :
-        return "Your are not logged in"
 
 
 def md(text, header=None, heading='h2'):
