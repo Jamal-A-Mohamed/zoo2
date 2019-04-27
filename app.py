@@ -18,7 +18,6 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/zoo"
 app.secret_key = 'mysecret'
 mongo = PyMongo(app)
 collection = mongo.db["animals"]
-NAMES = ["abc", "abcd", "abcde", "abcdef"]
 
 # empty array
 arr = []
@@ -58,7 +57,6 @@ def search() :
 #     return "NOTHING IN THE SEARCH BAR"
 
 
-NAMES = ["abc", "abcd", "abcde", "abcdef"]
 
 
 @app.route('/animalname', methods=['GET'])
@@ -128,7 +126,7 @@ def logout() :
         return redirect(url_for('index'))
 
     else :
-        return "Your are not logged in"
+        return "Your are not logged in,You don't need to log off"
 
 
 
