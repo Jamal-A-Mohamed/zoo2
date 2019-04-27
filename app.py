@@ -34,6 +34,11 @@ def index() :
 
     return render_template('index.html', animal=animal)
 
+
+@app.route("/glossary")
+def glossary() :
+    return render_template('glossary.html', animal_list=animal_list)
+
 @app.route('/search', methods=['POST', 'GET'])
 def search() :
     if request.method == 'POST' :
@@ -217,4 +222,5 @@ def md(text, header=None, heading='h2'):
 
 if __name__ == '__main__' :
     app.secret_key = 'mysecret'
-    app.run(host="0.0.0.0", port=5002)
+    # app.run(host="0.0.0.0", port=5002)
+    app.run(host="127.0.0.1", port=5002)
