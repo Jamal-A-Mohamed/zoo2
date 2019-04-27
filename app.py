@@ -1,7 +1,7 @@
 import os
 
 import bcrypt as bcrypt
-from flask import Flask, redirect, render_template, request, session, url_for, jsonify
+from flask import Flask, redirect, render_template, request, session, url_for
 from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
@@ -17,7 +17,6 @@ mongo = PyMongo(app)
 collection = mongo.db["animals"]
 
 animaltoGet = {'CommonName' : "Addax"}
-
 
 
 @app.route("/")
@@ -42,13 +41,7 @@ def search() :
             return render_template('animal.html', animal=animal, carenotes=carenotes)
 
 
-@app.route('/autocomplete', methods=['GET'])
-def autocomplete() :
-    results = []
-    search = request.args.get('autocomplete')
-    for animal in collection :
-        results.append(animal[0])
-    return jsonify(json_list=results)
+
 
 @app.route('/animal/<animal_name>')
 def animal_page(animal_name):
