@@ -3,7 +3,7 @@ import sys, os
 
 
 import bcrypt 
-from flask import Flask, redirect, render_template, request, session, url_for, abort
+from flask import Flask, redirect, render_template, request, session, url_for, abort, flash
 from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
@@ -27,12 +27,16 @@ animaltoGet = {'CommonName' : "Addax"}
 animal_list = [animal['CommonName'] for animal in collection.find({})]
 
 @app.route("/")
-def index() :
-    animal = collection.find_one(animaltoGet)
-    animal['html_summary'] = md(animal['BriefSummary'])
-    print(animal)
+def index():
 
-    return render_template('index.html', animal=animal)
+    animal = collection.find_one({'CommonName' : choice(animal_list)})
+    animal2 = collection.find_one({'CommonName' : choice(animal_list)})
+    animal3 = collection.find_one({'CommonName' : choice(animal_list)})
+    animal['html_summary'] = md(animal['BriefSummary'])
+    animal2['html_summary'] = md(animal2['BriefSummary'])
+    animal3['html_summary'] = md(animal3['BriefSummary'])
+
+    return render_template('index.html', animal=animal, animal2=animal2, animal3=animal3)
 
 
 @app.route("/glossary")
@@ -87,6 +91,9 @@ def animal_page(animal_name):
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
+    if 'username' in session:
+        return "User already logged in"
+
     if request.method == 'POST' :
         users = mongo.db.users
         login_user = users.find_one({'name' : request.form['username']})

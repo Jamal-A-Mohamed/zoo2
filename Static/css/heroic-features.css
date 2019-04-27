@@ -8,3 +8,41 @@
 body {
   padding-top: 56px;
 }
+
+
+.box {
+  height: 7.5em;
+  padding: 0.5em 1em;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  float: left;
+}
+
+.box--fixed {
+  width: 130px;
+}
+
+.box--responsive {
+  width: auto;
+}
+
+/* necessary plugin styles */
+.ellip {
+  display: block;
+  height: 100%;
+}
+
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
