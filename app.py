@@ -3,7 +3,7 @@ import sys, os
 
 
 import bcrypt 
-from flask import Flask, redirect, render_template, request, session, url_for
+from flask import Flask, redirect, render_template, request, session, url_for, abort
 from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
@@ -37,14 +37,7 @@ def index() :
 @app.route('/search', methods=['POST', 'GET'])
 def search() :
     if request.method == 'POST' :
-        error = None
-        carenotes = None
-        animal = collection.find_one({'CommonName' : request.form['animalname']})
-        if animal is None :
-            return render_template('layout.html', error='<div class="alert alert-danger">animal not found<strong></strong>\
-                                  </div>')
-        else :
-            return render_template('animal.html', animal=animal, carenotes=carenotes)
+        return redirect(url_for('animal_page', animal_name=request.form['animalname']))
 
 # # Route for handling the login page logic
 # @app.route('/login', methods=['GET', 'POST'])
@@ -60,14 +53,19 @@ def search() :
 
 # app.config['DEBUG'] = True
 
+@app.route('/random/')
 @app.route('/random')
 def random_animal():
     rand_animal = choice(animal_list)
+    print(rand_animal)
     return redirect(url_for('animal_page', animal_name=f"{rand_animal}"))
+
 
 @app.route('/animal/<animal_name>')
 def animal_page(animal_name):
-    animal = collection.find_one({"CommonName": animal_name})
+    if animal_name is None:
+        abort(404)
+    animal = collection.find_one_or_404({"CommonName": animal_name})
 
     convert_md = ('BriefSummary', 'FunFacts', "Diet", "Habitat")
 
