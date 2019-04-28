@@ -107,7 +107,7 @@ def animal_page(animal_name):
         abort(404)
     animal = collection.find_one_or_404({"CommonName": animal_name})
 
-    convert_md = ('BriefSummary', 'FunFacts', "Diet", "Habitat")
+    convert_md = ('BriefSummary', 'FunFacts', "Diet", "Habitat", "Zone")
 
     for field in convert_md:
         if field in animal:
@@ -235,7 +235,7 @@ def allowed_file(filename):
 
 def form2dict(form, image=None, addName=True):
     """return elements to update from form as a dict for update or insert to mongo"""
-    update_fields = ["ScientificName", "BriefSummary", "FunFacts", "Diet", "Habitat"] + ["CommonName"] * addName
+    update_fields = ["ScientificName", "BriefSummary", "FunFacts", "Diet", "Habitat", "Zone"] + ["CommonName"] * addName
     care_fields = ["FeedingSchedule", "Food", "Notes"]
     care_fields = {field: form.get(field) for field in care_fields if len(form.get(field)) > 0}
     update_dict = {field: form.get(field) for field in update_fields if len(form.get(field)) > 0}

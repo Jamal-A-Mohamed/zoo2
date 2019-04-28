@@ -3,7 +3,7 @@
 
     <h1>{{animal.CommonName}}</h1>
 
-    <h3>{{ animal.ScientificName }}</h3>
+    <h4><i>{{ animal.ScientificName }}</i></h4>
     <img class="img-thumbnail" src=http://3.89.175.127/Static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
              , height="325">
     {{animal.BriefSummary | safe}}
@@ -14,6 +14,7 @@
 
     {{ animal.Diet | safe }}
 
+    {{ animal.Zone | safe }}
 
     <h2>Care Notes: </h2>
         {{ carenotes.FeedingSchedule | safe }}
