@@ -2,7 +2,7 @@
     "CommonName": "Mudpuppy",
     "BriefSummary": "Necturus is a genus of aquatic salamanders endemic to the eastern United States and Canada. They are commonly known as waterdogs and mudpuppies. The common mudpuppy (N. maculosus) is probably the best-known species \u2013 as an amphibian with gill slits, it is often dissected in comparative anatomy classes.\n\n",
     "WikiContents": "Necturus is a genus of aquatic salamanders endemic to the eastern United States and Canada. They are commonly known as waterdogs and mudpuppies. The common mudpuppy (N. maculosus) is probably the best-known species \u2013 as an amphibian with gill slits, it is often dissected in comparative anatomy classes.\n\n\n== Taxonomy ==\nThe genus is under scrutiny by herpetologists. The relationship between the species is still being studied. Most recently, the Red River mudpuppy (N. louisianensis) was elevated to full species status, after being considered only a subspecies of the common mudpuppy (N. maculosus), but not all herpetologists agree on this change.\nThe species are:\n\nCommon mudpuppy (N. maculosus) (Rafinesque, 1818)\nRed River mudpuppy (N. louisianensis) Viosca, 1938\nAlabama waterdog (N. alabamensis) Viosca, 1937\nGulf Coast waterdog (N. beyeri) Viosca, 1937\nNeuse River waterdog (N. lewisi) Brimley, 1924\nDwarf waterdog (N. punctatus) (Gibbes, 1850)Two known fossil species, N. krausei and N. rafinesque, are respectively known from the Paleocene of Saskatchewan and from Florida during the Pleistocene.\n\n\n== References ==\n\n\n== External links ==\n Media related to Necturus at Wikimedia Commons",
-    "ImageURL": "Mudpuppy.jpg",
+    "ImageURL": "Mudpuppy_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Necturus",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -10,6 +10,6 @@
         "Class": "Amphibia",
         "Order": "Urodela",
         "Family": "Proteidae",
-        "Genus": "Necturus(Rafinesque, 1818)"
+        "Genus": "Necturus(Rafinesque"
     }
 }

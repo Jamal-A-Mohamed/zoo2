@@ -1,0 +1,17 @@
+{
+    "CommonName": "Edible Frog",
+    "BriefSummary": "The edible frog (Pelophylax kl. esculentus)  is a name for a common European frog, also known as the common water frog or green frog (however, this latter term is also used for the North American species Rana clamitans).\nIt is used for food, particularly in France for the delicacy frog legs. Females are between 5 and 9 cm long, males between 6 and 11 cm.",
+    "WikiContents": "The edible frog (Pelophylax kl. esculentus)  is a name for a common European frog, also known as the common water frog or green frog (however, this latter term is also used for the North American species Rana clamitans).\nIt is used for food, particularly in France for the delicacy frog legs. Females are between 5 and 9 cm long, males between 6 and 11 cm.\n\n\n== Distribution ==\nP. esculentus is endemic to Europe. It naturally occurs from the northern half of France to western Russia, and from Estonia and Denmark to Bulgaria and northern Italy. The edible frog is introduced in Spain and the United Kingdom. The natural range is nearly identical to that of P. lessonae.\n\n\n== Hybridogenesis ==\n\nPelophylax kl. esculentus is the fertile hybrid of the pool frog (Pelophylax lessonae) and the marsh frog (Pelophylax ridibundus). It reproduces by hybridogenesis (hemiclonally).Hybridogenesis implies that during gametogenesis hybrids (of RL genotype) exclude one parental genome (L or R) and produce gametes with an unrecombined genome of the other parental species (R or L, respectively), instead of containing mixed recombined parental genomes. The hybrid populations are usually propagated by mating (backcrosses) with a sympatric parental species - P. lessonae (LL) or P. ridibundus (RR), providing the second, discarded parental genome (L or R respectively). Hybridogenesis is thus a hemiclonal mode of reproduction; half of the genome is transmitted to the next generation clonally, unrecombined (intact); the other half sexually, recombined.For example, in the most widespread so called L\u2013E system, edible frogs Pelophylax kl. esculentus (RE) produce gametes of the marsh frog P. ridibundus (R) and mate with coexisting pool frogs Pelophylax lessonae (L gametes) \u2013 see below in the middle.\n\nBecause this hybrid requires another taxon as a sexual host to reproduce, usually one of the parental species, it is a klepton. Hence the addition of the \"kl.\" (for klepton) in the species name.There are also known all-hybrid populations, where diploid hybrids (LR) coexist with triploid (LLR or LRR) hybrids, providing L or R genomes respectively. In this situation, diploid hybrids (LR) generate not only haploid R or L gametes, but also the diploid gametes (RL) needed to recreate triploids.\n\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n== References ==\n\n\n== External links ==\nArch\u00e9oZooTh\u00e8que : Edible frog skeleton drawing\nSpecies account on HerpFrance.com\nVideo: Pool frogs and hybrid green frogs on YouTube. Mixed mating of pool frog and edible frog; pool frog are grass green and smaller.",
+    "ImageURL": "EdibleFrog_sm.jpe",
+    "Source": "https://en.wikipedia.org/wiki/Edible_frog",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Amphibia",
+        "Order": "Anura",
+        "Family": "Ranidae",
+        "Genus": "Pelophylax",
+        "Species": "lessonaeridibundus"
+    },
+    "ScientificName": "Pelophylax lessonaeridibundus"
+}

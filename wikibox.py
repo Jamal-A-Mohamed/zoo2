@@ -10,6 +10,9 @@ from util import load_json, save_json
 import requests
 from bs4 import BeautifulSoup
 import re
+import string
+
+
 
 
 def main():
@@ -27,7 +30,11 @@ def main():
         if taxonomy:
             animal["Taxonomy"] = taxonomy
 
+            if "Species" in taxonomy and "Genus" in taxonomy:
+                animal["ScientificName"] = str(taxonomy["Genus"] + ' ' + taxonomy['Species'])
+
         save_json(animal, file)
+
 
 
 
@@ -58,10 +65,26 @@ def get_wiki_taxonomy(url):
         for i in range(len(rows)-1):
             if rows[i] in classifications:
                 entry = rows[i+1]
-                class_dict[rows[i][:-1]] = entry
+                class_dict[rows[i][:-1]] = fix_comma(entry)
     except Exception:
         pass
+
+    # quickfix some problems
+    # species can have genus abbreviation, we will remove here
+    if 'Species' in class_dict:
+            class_dict['Species'] = get_lowercase(class_dict['Species'])
     return class_dict
+
+
+lowercase = set(string.ascii_lowercase)  # prefetch for performance
+
+def get_lowercase(in_str):
+    return ''.join(letter for letter in in_str if letter in lowercase)
+
+def fix_comma(in_str):
+    if ',' in in_str:
+        return in_str.split(',')[0]
+    return in_str
 
 
 if __name__ == '__main__':

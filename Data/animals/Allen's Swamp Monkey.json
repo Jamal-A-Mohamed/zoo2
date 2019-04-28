@@ -2,7 +2,7 @@
     "CommonName": "Allen's Swamp Monkey",
     "BriefSummary": "The Allen's swamp monkey (Allenopithecus nigroviridis) is a primate species categorized in its own genus Allenopithecus in the Old World monkey family. Phylogenetically, it is a sister clade to the guenons, but differs in dentition and habits.\nAllen's swamp monkey was named after American zoologist Joel Asaph Allen.\n\n",
     "WikiContents": "The Allen's swamp monkey (Allenopithecus nigroviridis) is a primate species categorized in its own genus Allenopithecus in the Old World monkey family. Phylogenetically, it is a sister clade to the guenons, but differs in dentition and habits.\nAllen's swamp monkey was named after American zoologist Joel Asaph Allen.\n\n\n== Range ==\nAllen's swamp monkey lives in the Congo Basin, in the Republic of Congo and in the west of the DRC. It was recorded from Dzanga-Sangha Special Reserve in the Central African Republic in 2016.\n\n\n== Description ==\nThis monkey is a rather strongly built animal. Its skin is grey-green at the top side. Its face is reddish with long hair bundles at the cheeks. The slight webbing of the fingers and toes point to its partially aquatic way of life. Allen's swamp monkey can reach a full body length from 45 to 60 cm, with a roughly 50-cm-long tail. Males, weighing up to 6 kg, are substantially larger than the females (up to 3.5 kg).\n\n\n== Behavior ==\n\nAllen's swamp monkey is a diurnal animal and regularly looks for food on the ground. It inhabits swampy, water-rich areas and can swim well, diving to avoid danger. It lives in social groups of up to 40 animals, communicating with different calls, gestures, and touches.\nIts diet consists of fruits and leaves, as well as beetles and worms.\nLittle is known of the mating habits of this species. The females bear young, which are weaned around three months old and are mature after three to five years. Its lifespan can be as long as 23 years. Raptors, snakes, and the bonobo rank among the natural enemies of Allen's swamp monkey. Unlike other primates, its swampy habitat is not so strongly exposed to the danger of the forests. However, it is hunted for its meat.\n\n\n== References ==\n\n\n== External links ==\nPrimate Info Net Allenopithecus Factsheets\nhttp://members.tripod.com/uakari/allenopithecus_nigroviridis.html",
-    "ImageURL": "AllensSwampMonkey.jpg",
+    "ImageURL": "AllensSwampMonkey_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Allen%27s_swamp_monkey",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,7 +11,8 @@
         "Order": "Primates",
         "Suborder": "Haplorhini",
         "Family": "Cercopithecidae",
-        "Genus": "AllenopithecusLang, 1923",
-        "Species": "A.\u00a0nigroviridis"
-    }
+        "Genus": "AllenopithecusLang",
+        "Species": "nigroviridis"
+    },
+    "ScientificName": "AllenopithecusLang nigroviridis"
 }

@@ -2,7 +2,7 @@
     "CommonName": "Vietnamese Moss Frog",
     "BriefSummary": "Theloderma corticale (common names: mossy frog, Vietnamese mossy frog, and Tonkin bug-eyed frog) is a species of frog in the family Rhacophoridae.\nIt is found in northern Vietnam and possibly in China and adjacent Laos.",
     "WikiContents": "Theloderma corticale (common names: mossy frog, Vietnamese mossy frog, and Tonkin bug-eyed frog) is a species of frog in the family Rhacophoridae.\nIt is found in northern Vietnam and possibly in China and adjacent Laos.\n\n\n== Description ==\nThe common name \"mossy frog\" arises from the fact that its skin is a mottled green and brown that resembles moss growing on rock, and forms an effective form of camouflage. They have large sticky pads on their toes and a soft underbelly. The females will grow larger than the males and can reach sizes of 8\u20139 cm (3.1\u20133.5 in). This species will curl into a ball when frightened, and play dead.\n\n\n== Habitat and conservation ==\nIts natural habitats are primary evergreen rainforests. It is a semi-aquatic that is found in caves and steep rocky cliffs. Breeding takes place in rock cavities or tree holes.Its habitat is threatened by forest loss. It is also collected for international pet trade. Like many amphibians, the Vietnamese mossy frog is vulnerable to the chytrid fungus Batrachochytrium dendrobatidis.\n\n\n== Diet ==\nTheloderma corticale is insectivorous.\n\n\n== References ==\n\n\n== External links ==\n Media related to Theloderma corticale at Wikimedia Commons\n Data related to Theloderma corticale at Wikispecies",
-    "ImageURL": "VietnameseMossFrog.jpg",
+    "ImageURL": "VietnameseMossFrog_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Theloderma_corticale",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,6 +11,7 @@
         "Order": "Anura",
         "Family": "Rhacophoridae",
         "Genus": "Theloderma",
-        "Species": "T.\u00a0corticale"
-    }
+        "Species": "corticale"
+    },
+    "ScientificName": "Theloderma corticale"
 }

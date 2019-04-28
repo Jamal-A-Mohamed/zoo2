@@ -1,0 +1,17 @@
+{
+    "CommonName": "Pheasant pigeon",
+    "BriefSummary": "The pheasant pigeon (Otidiphaps nobilis) is a species of large terrestrial pigeon. It is the only species of the monotypic genus Otidiphaps. The pheasant pigeon is found in the primary rainforests of New Guinea and nearby islands. It ranges primarily over hilly and lower mountain areas, but can also be found in lowlands.",
+    "WikiContents": "The pheasant pigeon (Otidiphaps nobilis) is a species of large terrestrial pigeon. It is the only species of the monotypic genus Otidiphaps. The pheasant pigeon is found in the primary rainforests of New Guinea and nearby islands. It ranges primarily over hilly and lower mountain areas, but can also be found in lowlands.\n\n\n== Taxonomy and systematics ==\nThe genus name makes reference to its similarities to the bustard family (Otidae). Its common name reflects its adaptation to living on the forest floor in the fashion of a South East Asian pheasant.\n\n\n=== Subspecies ===\nCommonly, there are four subspecies recognized that differ primarily in the presence or absence of a small crest and in the colour of the nape:\nWhite-naped pheasant pigeon (O. n. aruensis) \u2013 Rothschild, 1928: Found on the Aru Islands, Vulnerable\nGreen-naped pheasant pigeon (O. n. nobilis) \u2013 Gould, 1870: Found on western New Guinea, Batanta and Waigeo Islands, Least concern.\nGrey-naped pheasant pigeon (O. n. cervicalis) \u2013 Ramsay, EP, 1880: Found on eastern and south-eastern New Guinea, Least concern.\nBlack-naped pheasant pigeon (O. n. insularis) \u2013 Salvin & Godman, 1883: Found on Fergusson Island, Endangered.Some authors however recognize the 4 subspecies as 4 different species, a classification scheme followed by the IUCN.\n\n\n== Description ==\nThe pheasant pigeon resembles a pheasant in external morphology, particularly in its laterally compressed tail and the rounded wings. No galliform birds occur in New Guinea, and the pheasant pigeon has filled the ecological niche of a partridge or small pheasant (while the larger Goura crowned pigeons have a lifestyle similar to larger pheasants, grouse or turkeys). It is a highly secretive species, feeding on seeds and fallen fruits. It nests on the ground below trees and bushes, laying one egg that it incubates for around four weeks.\n\n\t\t\n\t\t\n\t\t\n\n\n== Status and conservation ==\nThe nominate subspecies and the grey-naped pheasant pigeon are not considered threatened, although the black-naped pheasant pigeon is considered endangered and the black-naped pheasant pigeon is vulnerable. Because it is tied to primary forests, and is unique within the pigeon family, it is considered a genus that requires further investigation and monitoring.\n\n\n== References ==\n\ndel Hoyo, Elliott and Sargatal (editors); Handbook of the Birds of the World, Vol 4.  ISBN 84-87334-22-9",
+    "ImageURL": "Pheasantpigeon_sm.jpg",
+    "Source": "https://en.wikipedia.org/wiki/Pheasant_pigeon",
+    "Taxonomy": {
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Aves",
+        "Order": "Columbiformes",
+        "Family": "Columbidae",
+        "Genus": "OtidiphapsGould",
+        "Species": "nobilis"
+    },
+    "ScientificName": "OtidiphapsGould nobilis"
+}

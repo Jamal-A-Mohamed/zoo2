@@ -2,7 +2,7 @@
     "CommonName": "Horned Puffin",
     "BriefSummary": "The horned puffin (Fratercula corniculata) is an auk, similar in appearance to the Atlantic puffin. It is a pelagic seabird that feeds primarily by diving for fish. It nests in colonies, often with other auks.",
     "WikiContents": "The horned puffin (Fratercula corniculata) is an auk, similar in appearance to the Atlantic puffin. It is a pelagic seabird that feeds primarily by diving for fish. It nests in colonies, often with other auks.\n\n\n== Description ==\n\nThe height of the adult bird is approximately 20 cm (8 in), the weight is approximately 500 g (18 oz), and the wingspan is approximately 58 cm (23 in). Horned puffins are monomorphic (the male and female exhibit the same plumage coloration). Sexually mature birds have a small fleshy black \"horn\" extending upwards from the eye, from which the animal derives its common name \u2014 the horned puffin. A dark eyestripe extends backwards from the eye towards the occiput. The cheeks are white, with a yellow fleshy spot at the base of the bill.\nIn summer (breeding) plumage, the outer keratinous layers of the bill \u2014 the rhamphotheca \u2014 grow in size and change to a bright yellow color at the base and dark orange at the tip. The size and color of the rhamphotheca helps to attract a mate. The brilliant outer layers of the rhamphotheca are shed in late summer. The face reverts to a gray and black color, with a smaller, less brilliantly colored bill, and the legs and feet fade to a pale fleshy color.\nThis phase is referred to as eclipse plumage.\nLike many other seabirds, the horned puffin is countershaded for camouflage against both aerial and undersea predators. The underparts (breast, throat, belly, flanks and vent) are white, while the upper parts (mantle, scapulars, coverts, primaries, tertials and rump) are black. The legs and feet are orange.\n\n\n== Behavior ==\n\nThis species winters far out to sea, and breeds on rocky islands off the coasts of Siberia, Alaska and British Columbia. One white egg is usually laid in a crevice or cavity among the rocks.\nHunting areas are usually located fairly far offshore from the nest. Horned puffins will return from hunting with several small fish, squid or crustaceans in their specialized bills. Unlike many other seabirds, which employ regurgitation to feed their young, the horned puffin feeds intact fish from its bill to the chick. Both parents participate in the feeding and rearing of the chick.\nThe population of these birds has declined due to the introduction of rats onto some islands used for nesting.\n\n\n== References ==\n\n\"National Geographic\"  Field Guide to the Birds of North America ISBN 0-7922-6877-6\n Seabirds, an Identification Guide by Peter Harrison, (1983) ISBN 0-7470-1410-8\nHandbook of the Birds of the World Vol 3,  Josep del Hoyo editor, ISBN 84-87334-20-2\n\"National Audubon Society\" The Sibley Guide to Birds, by David Allen Sibley, ISBN 0-679-45122-6\n\n\n== External links ==\nNatureWorks - The Horned Puffin\nPuffinpalooza.com",
-    "ImageURL": "HornedPuffin.jpg",
+    "ImageURL": "HornedPuffin_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Horned_puffin",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,6 +11,7 @@
         "Order": "Charadriiformes",
         "Family": "Alcidae",
         "Genus": "Fratercula",
-        "Species": "F.\u00a0corniculata"
-    }
+        "Species": "corniculata"
+    },
+    "ScientificName": "Fratercula corniculata"
 }

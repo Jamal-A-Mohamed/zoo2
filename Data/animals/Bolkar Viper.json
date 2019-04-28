@@ -2,7 +2,7 @@
     "CommonName": "Bolkar Viper",
     "BriefSummary": "Common names: Bulgardagh viper.The Mount Bulgar viper (Montivipera bulgardaghica) is a venomous viper species endemic to the mountains of southern Turkey. No subspecies are currently recognized.",
     "WikiContents": "Common names: Bulgardagh viper.The Mount Bulgar viper (Montivipera bulgardaghica) is a venomous viper species endemic to the mountains of southern Turkey. No subspecies are currently recognized.\n\n\n== Description ==\nIt grows to a maximum total length (body + tail) of about 78 cm (31 in).\n\n\n== Geographic range ==\nIt is found in the Bulgar Dagh (Bolkar Dagi) mountains, Nigde Province, south central Anatolia, Turkey.\nThe type locality given is \"Cilician Taurus (Kar Boghaz, Bulgar Dagh, 2500 m) province Nigde\" (= Karbogaz, Bolkar dagi Uluki\u015fla, 8,200 ft), south central Anatolia, Turkey.\n\n\n== Conservation status ==\n This species is classified as Least Concern according to the IUCN Red List of Threatened Species.It is also listed as a protected species (Appendix III) under the Berne Convention.\n\n\n== Taxonomy ==\nThis species was considered by Golay et al. (1993) to be a subspecies of M. xanthina, and was subsequently moved to the genus Montivipera by Nilson et al. (1999), who considered it to be a synonym of Montivipera xanthina.\n\n\n== See also ==\nList of viperine species and subspecies\nViperinae by common name\nViperinae by taxonomic synonyms\nSnakebite\n\n\n== References ==\n\n\n== Further reading ==\n\n\n== External links ==\nMontivipera xanthina at the Reptarium.cz Reptile Database. Accessed 21 October 2013.",
-    "ImageURL": "BolkarViper.jpg",
+    "ImageURL": "BolkarViper_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Mount_Bulgar_viper",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -12,6 +12,7 @@
         "Suborder": "Serpentes",
         "Family": "Viperidae",
         "Genus": "Montivipera",
-        "Species": "M.\u00a0bulgardaghica"
-    }
+        "Species": "bulgardaghica"
+    },
+    "ScientificName": "Montivipera bulgardaghica"
 }

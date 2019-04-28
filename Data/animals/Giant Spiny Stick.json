@@ -2,7 +2,7 @@
     "CommonName": "Giant Spiny Stick",
     "BriefSummary": "Eurycantha calcarata (common names thorny devil stick insect  and giant spiny stick insect ) is a species of phasmid endemic to Australasia.",
     "WikiContents": "Eurycantha calcarata (common names thorny devil stick insect  and giant spiny stick insect ) is a species of phasmid endemic to Australasia.\n\n\n== Range and Habitat ==\nEurycantha calcarata is native to New Guinea, New Caledonia, and the Solomon Islands.  Typical habitat includes warm humid rainforest where it is found in foliage and ground litter.\n\n\n== Description ==\n\nThe thorny devil color ranges from light brown to black and resembles bark or rotten wood. Both sexes are wingless and armored with spines on body and legs.  Exhibiting the sexual dimorphism of many similar insects (particularly other phasmids as well as mantises), males are small and thinner, less than 9-10 cm long while females are typically 14 cm in length.  The male has enlarged hind leg femurs with a curved spine or thorn on the underneath side, large enough to be used as a fish hook in New Guinea. Females (only) have a larger abdomen tipped with an ovipositor.\n\n\n== Behavior ==\n\nThorny devils are nocturnal feeders and group together during the day to hide under bark and in trees hollows, providing protection from predators. Like other types of stick insects they use crypsis and catalepsy to evade predators.\n\n\n== Reproduction ==\nEurycantha calcarata typically reproduce through sexual reproduction and produce eggs that hatch 4.5-6.5 months later. When no males are present in the population, this stick insect exhibits parthenogenesis instead.  Eggs are typically 8.2 mm and 4 mm wide, with a somewhat cylindrical shape. Egg color can vary from shades of brown to grey and surface texture is rough and shiny.Males actively fight for mating rights with females. The females have a tail like structure known as the ovipositor, which is used to lay eggs under soft soil. The eggs tend to resemble plant seeds covered by a hard shell. After about 4 months\u2019 incomplete metamorphosis takes place when the nymphs hatch out. Once hatched they are brown in colour and are about 30 \u2013 40 mm long. The defenseless nymphs crawl up food plants to collect at the top.\n\n\n== Diet ==\nEurycantha calcarata are herbivores, consuming forest leaves including eucalyptus, ficus, bramble, raspberry, rose, cherry laurel and guava.\n\n\n== References ==",
-    "ImageURL": "GiantSpinyStick.jpg",
+    "ImageURL": "GiantSpinyStick_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Eurycantha_calcarata",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,6 +11,7 @@
         "Order": "Phasmatodea",
         "Family": "Lonchodidae",
         "Genus": "Eurycantha",
-        "Species": "E.\u00a0calcarata"
-    }
+        "Species": "calcarata"
+    },
+    "ScientificName": "Eurycantha calcarata"
 }

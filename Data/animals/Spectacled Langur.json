@@ -2,7 +2,7 @@
     "CommonName": "Spectacled Langur",
     "BriefSummary": "The dusky leaf monkey, spectacled langur, or spectacled leaf monkey (Trachypithecus obscurus) is a species of primate in the family Cercopithecidae. It is found in Malaysia and Thailand",
     "WikiContents": "The dusky leaf monkey, spectacled langur, or spectacled leaf monkey (Trachypithecus obscurus) is a species of primate in the family Cercopithecidae. It is found in Malaysia and Thailand \n\n\n== Habitation and activity patterns ==\nThe Trachypithecus obscurus are primate species that are found in the Peninsular region of Malaysia. Scan and sampling of 13 individuals (2 adult males, 8 adult females, 3 juveniles) was done by researchers from University Sains Malaysia. The researchers found that most of the dusky leaf monkeys spent their times positioning. The time that the dusky leaf monkey spent posting was estimated to be 40%. Researchers also found that the individuals spent approximately 33% of their time feeding on the leaves of the plants. In this research, researchers found these dusky leaf monkeys feeding on 10 different forest plant species on a regular basis.\nThere are several subspecies of this lutung:\nTrachypithecus obscurus obscurus\nTrachypithecus obscurus flavicauda\nTrachypithecus obscurus halonifer\nTrachypithecus obscurus carbo\nTrachypithecus obscurus styx\nTrachypithecus obscurus seimundi\nTrachypithecus obscurus sanctorum\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n== References ==\n\nYap, Joleen & Ruppert, Nadine & Fadzly, Nik. (2016). Activity patterns and diet of a group of wild dusky leaf monkeys (Trachypithecus obscurus) in Penang, Malaysia (2016).\n\n\n== External links ==\n Data related to Trachypithecus obscurus at Wikispecies\n Media related to Trachypithecus obscurus at Wikimedia Commons\n\nInformation on Dusky Leaf Monkeys from the Santa Barbara Zoo\nInformation on Dusky Leaf Monkeys from Monkeyland Primate Sanctuary",
-    "ImageURL": "SpectacledLangur.jpg",
+    "ImageURL": "SpectacledLangur_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Dusky_leaf_monkey",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -12,6 +12,7 @@
         "Suborder": "Haplorhini",
         "Family": "Cercopithecidae",
         "Genus": "Trachypithecus",
-        "Species": "T.\u00a0obscurus"
-    }
+        "Species": "obscurus"
+    },
+    "ScientificName": "Trachypithecus obscurus"
 }

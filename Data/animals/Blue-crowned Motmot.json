@@ -2,7 +2,7 @@
     "CommonName": "Blue-crowned Motmot",
     "BriefSummary": "The blue-capped motmot or blue-crowned motmot (Momotus coeruliceps) is a colorful near-passerine bird found in forests and woodlands of eastern Mexico.  This species and the Lesson's Motmot, Whooping Motmot, Trinidad Motmot, Amazonian Motmot, and Andean Motmot were all considered conspecific. The IUCN uses blue-crowned as their identifier for this species, however it was also the name used for the prior species complex.\nIt is the only species in the former complex where the central crown is blue. There is a black eyemask. The call is a low owl-like ooo-doot.\nThese birds often sit still, and in their dense forest habitat can be difficult to see, despite their size. They eat small prey such as insects and lizards, and will also regularly take fruit.\nLike most of the Coraciiformes, motmots nest in tunnels in banks, laying about three or four white eggs.",
     "WikiContents": "The blue-capped motmot or blue-crowned motmot (Momotus coeruliceps) is a colorful near-passerine bird found in forests and woodlands of eastern Mexico.  This species and the Lesson's Motmot, Whooping Motmot, Trinidad Motmot, Amazonian Motmot, and Andean Motmot were all considered conspecific. The IUCN uses blue-crowned as their identifier for this species, however it was also the name used for the prior species complex.\nIt is the only species in the former complex where the central crown is blue. There is a black eyemask. The call is a low owl-like ooo-doot.\nThese birds often sit still, and in their dense forest habitat can be difficult to see, despite their size. They eat small prey such as insects and lizards, and will also regularly take fruit.\nLike most of the Coraciiformes, motmots nest in tunnels in banks, laying about three or four white eggs.\n\n\n== Gallery ==\n\n\n== References ==\n\n\n== External links ==",
-    "ImageURL": "BluecrownedMotmot.jpg",
+    "ImageURL": "BluecrownedMotmot_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Blue-capped_motmot",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,6 +11,7 @@
         "Order": "Coraciiformes",
         "Family": "Momotidae",
         "Genus": "Momotus",
-        "Species": "M.\u00a0coeruliceps"
-    }
+        "Species": "coeruliceps"
+    },
+    "ScientificName": "Momotus coeruliceps"
 }
