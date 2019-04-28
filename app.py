@@ -125,6 +125,8 @@ def animal_page(animal_name):
         if field in animal:
             animal[field] = md(animal[field], field)
 
+    animal["attribution"] = wiki_attribution(animal["Source"])
+
     carenotes = None
     if "Carenotes" in animal:
         carenotes = animal["Carenotes"]
@@ -273,6 +275,9 @@ def get_animals_from_classification(level, classification):
     matching = [animal['CommonName'] for animal in collection.find({key:value})]
     return list(sorted(matching))
 
+
+def wiki_attribution(source_url):
+    return f'This article uses material from the Wikipedia article <a href="{source_url}">"{source_url.split("/")[-1]}"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a> '
 
 if __name__ == '__main__':
     app.secret_key = 'mysecret'
