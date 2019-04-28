@@ -262,9 +262,8 @@ def form2dict(form, image=None, addName=True):
 
 
 def md(text, header=None, heading='h2'):
-    print(camel_re.sub(" ", header))
     if header and heading in ('h1', 'h2', 'h3', 'h4'):
-        return f'<{heading}>{camel_re.sub(" ", header)}</{heading}>' + markdown(text)
+        return f'<{heading}>{str(camel_re.sub(" ", header))}</{heading}>' + markdown(text)
     return markdown(text)
 
 def get_animals_from_classification(level, classification):
