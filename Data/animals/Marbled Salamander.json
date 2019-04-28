@@ -2,7 +2,7 @@
     "CommonName": "Marbled Salamander",
     "BriefSummary": "The marbled salamander (Ambystoma opacum) is a species of mole salamander found in the eastern United States.\n\n",
     "WikiContents": "The marbled salamander (Ambystoma opacum) is a species of mole salamander found in the eastern United States.\n\n\n== Description ==\nThe marbled salamander is a stocky, boldly banded salamander. The bands of females tend to be gray, while those of males are more white. Adults can grow to about 11 cm (4 in),  small compared to other members of its genus. Like most of the mole salamanders, it is secretive, spending most of its life under logs or in burrows.\n\n\n== Habitat and range ==\nMarbled salamanders are found in the eastern United States, from southern New England to northern Florida, and west to Illinois and Texas. They have been found as far north as New Hampshire, though only two sightings have been reported there. Their habitats are damp woodlands, forests, and places with soft and wet soil. Seasonally flooded areas are essential for breeding, but the salamanders do not normally enter the water. They are not venomous like many other salamanders.\n\n\n== Lifecycle ==\n\nAdults spend most of their time in their burrows or under logs, as is the case with most mole salamanders. Juvenile marbled salamanders hatch early compared to most salamanders and gain a size advantage by feeding and growing for several months before the Jefferson salamanders and spotted salamanders hatch later in the spring. Larvae typically mature as quickly as two months in the southern part of their range, but take up to six months to mature in the northern part.\nMarbled salamanders, like other members of this genus, are reported to have relatively long life spans, 8\u201310 years or more.\n\n\n== Feeding ==\n\nAdults take terrestrial invertebrates, such as worms, insects, centipedes, and mollusks (snails, slugs). Larvae take small aquatic animals (zooplankton), but larger individuals will take eggs and larvae of other amphibians, as well.\n\n\n== References ==\n\n\n== Further reading ==\nGravenhorst JLC. 1807. Vergleichende Uebersicht des Linneischen und einiger neuern zoologischen Systeme ... Nebst dem eingeschalteten Verzeichnisse der zoologischen Sammlung des Verfassers und den Beschreibungen neuer Thierarten, die in derselben sind. G\u00f6ttingen: Heinrich Dieterich. xx + 476 pp. (Salamandra opaca, new species, p. 431). (in German).\nPetranka, James W. (1998). Salamanders of the United States and Canada. Washington, District of Columbia: Smithsonian Books. 592 pp. ISBN 1-56098-828-2.\nTyning, Thomas F. (1990). A Guide to Amphibians and Reptiles. Stokes Nature Guides. New York: Little, Brown and Company. 416 pp. ISBN 0-316-81713-9.\n\n\n== External links ==\nAnimal Diversity Web\nSavannah River Ecology Laboratory\nUSGS\nITIS",
-    "ImageURL": "MarbledSalamander.jpg",
+    "ImageURL": "MarbledSalamander_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Marbled_salamander",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,6 +11,7 @@
         "Order": "Urodela",
         "Family": "Ambystomatidae",
         "Genus": "Ambystoma",
-        "Species": "A.\u00a0opacum"
-    }
+        "Species": "opacum"
+    },
+    "ScientificName": "Ambystoma opacum"
 }

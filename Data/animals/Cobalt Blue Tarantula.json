@@ -2,7 +2,7 @@
     "CommonName": "Cobalt Blue Tarantula",
     "BriefSummary": "The cobalt blue tarantula (Cyriopagopus lividus) is a tarantula species (family Theraphosidae)  native to Myanmar and over the border into Thailand. It was originally described as Haplopelma lividum.",
     "WikiContents": "The cobalt blue tarantula (Cyriopagopus lividus) is a tarantula species (family Theraphosidae)  native to Myanmar and over the border into Thailand. It was originally described as Haplopelma lividum.\n\n\n== Description ==\nThe cobalt blue tarantula is a medium-sized tarantula with a leg span around 13 cm (5 in). The cobalt blue tarantula is noted for its iridescent blue legs and light gray prosoma and opisthosoma, the latter of which may contain darker gray chevrons. Males and females look the same until the ultimate (final) molt of the males. At this point, the male exhibits sexual dimorphism in the form of a light tan or bronze coloration and legginess. Additionally, males gain a palpal bulb on the pedipalps and tibial apophyses (mating hooks). The female eventually becomes larger than the male and lives years longer. The cobalt blue tarantula is a fossorial species and spends nearly all of its time in deep burrows of its own construction.\n\n\t\t\n\n\n== Habitat ==\nThe cobalt blue tarantula inhabits the tropical rains forests of southeast Asia, where they construct deep burrows, and generally only leave them to find food.\n\n\n== Pets ==\nThe cobalt blue tarantula is a mainstay in the pet trade, despite being a fast and defensive tarantula with potent venom. Bites from this species can result in severe muscle cramps and inflammation. Typically, they are kept in a deep tank with 25 to 30 cm (10-12 inches) of substrate such as peat moss or coco-husk that is kept humid.\n\n\n== References ==\n\n\n== External links ==",
-    "ImageURL": "CobaltBlueTarantula.jpg",
+    "ImageURL": "CobaltBlueTarantula_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Cobalt_blue_tarantula",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,6 +11,7 @@
         "Order": "Araneae",
         "Family": "Theraphosidae",
         "Genus": "Cyriopagopus",
-        "Species": "C.\u00a0lividus"
-    }
+        "Species": "lividus"
+    },
+    "ScientificName": "Cyriopagopus lividus"
 }

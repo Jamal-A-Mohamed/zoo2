@@ -2,7 +2,7 @@
     "CommonName": "Speckled Forest Pitviper",
     "BriefSummary": "Bothrops taeniatus, the speckled forest-pitviper, is a species of pit viper found in the equatorial forests of South America. The specific name, taenia, is derived from the Greek word, tainia, meaning ribbon bandage or stripe, in reference to the slender body. Two subspecies are currently recognized, including the nominate subspecies described here.\n\n",
     "WikiContents": "Bothrops taeniatus, the speckled forest-pitviper, is a species of pit viper found in the equatorial forests of South America. The specific name, taenia, is derived from the Greek word, tainia, meaning ribbon bandage or stripe, in reference to the slender body. Two subspecies are currently recognized, including the nominate subspecies described here.\n\n\n== Description ==\n\nAdults are usually less than 100 cm (39 in) in total length, although some may grow to as much as 150 cm (59 in). The maximum total length is 175 cm (69 in) for a specimen from Tepoe, Suriname.\nThe body is relatively slender with a prehensile tail. The color pattern is extremely complex, varying overall from lavender gray to yellow green, while juveniles undergo considerable ontogenetic color change as they mature into adults.\nIt is distinguished from other members of this genus by having mostly single subcaudal scales and a row of bold white spots where the dorsal and ventral scales meet.\n\n\n== Geographic range ==\nWidespread in the equatorial forests of South America in Ecuador, Colombia, Venezuela, Guyana, Suriname, French Guiana, Brazil, Peru, and Bolivia. The type locality given is \"flumen Amazonum\", which according to Vanzolini (1981) refers to the section of the Amazon River between the mouth of the Tajapuru river (01\u00b002'S, 51\u00b002'W) and the mouth of the Negros river (03\u00b008'S, 59\u00b055'W).\n\n\n== Habitat ==\nThis arboreal snake inhabits rainforests in lowlands and foothills, as well as moist tropical forests. It is usually found in vines and low vegetation in primary forest and along forest edges. It is suspected of living mainly in the forest canopy.\n\n\n== Venom ==\nOnly two cases of bites from this species have been documented, and both involved severe local swelling of the entire bitten limb. In the second case, the tissue damage was so severe that it led to amputation of the afflicted limb despite antivenin treatment.\n\n\n== Subspecies ==\n\n\n== See also ==\nList of crotaline species and subspecies\nCrotalinae by common name\nCrotalinae by taxonomic synonyms\n\n\n== References ==\n\nBothrops taeniatus at the Reptarium.cz Reptile Database. Accessed 24 July 2008.",
-    "ImageURL": "SpeckledForestPitviper.jpg",
+    "ImageURL": "SpeckledForestPitviper_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Bothrops_taeniatus",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -12,6 +12,7 @@
         "Suborder": "Serpentes",
         "Family": "Viperidae",
         "Genus": "Bothrops",
-        "Species": "B.\u00a0taeniatus"
-    }
+        "Species": "taeniatus"
+    },
+    "ScientificName": "Bothrops taeniatus"
 }

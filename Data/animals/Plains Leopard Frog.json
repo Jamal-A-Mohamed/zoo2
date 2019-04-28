@@ -2,7 +2,7 @@
     "CommonName": "Plains Leopard Frog",
     "BriefSummary": "The Plains leopard frog (Lithobates blairi) It is sometimes referred to as Blair's leopard frog, named after the noted zoologist and University of Texas professor, Dr. W. Frank Blair.",
     "WikiContents": "The Plains leopard frog (Lithobates blairi) It is sometimes referred to as Blair's leopard frog, named after the noted zoologist and University of Texas professor, Dr. W. Frank Blair.\n\n\n== Description ==\nThe Plains leopard frog grows from 2.0 to 4.3 in (5.1 to 10.9 cm) in length, and is typically brown in color. Their common name originates from the distinctive irregular, dark colored spotting on their backs. They have long, powerful legs, and are capable of leaping great distances.\n\n\n== Behavior ==\nAlthough found throughout semiarid regions, the Plains leopard frog is almost always found in or very near permanent water sources, such as streams, creeks, and ponds. They are nocturnal, and primarily insectivorous, though they will eat almost anything they can overpower and swallow, including other frogs. They are shy animals, often fleeing beneath the water if approached.\n\n\n== Geographic distribution ==\nThe Plains leopard frog, as its name implies, is found throughout the Great Plains of the United States, from Indiana west across central and southern plains to South Dakota, south to Colorado, New Mexico, and Texas, with a disjunct population in Arizona.\n\n\n== Conservation status ==\nThe Plains leopard frog Frog is fairly common throughout its range, and holds no special conservation status, except in the state of Indiana, where it is endangered. This is probably because of the use of fertilizers and pesticides in farms located near this frog's habitats.\n\n\n== Footnotes ==\n\n\n== References ==",
-    "ImageURL": "PlainsLeopardFrog.jpg",
+    "ImageURL": "PlainsLeopardFrog_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Plains_leopard_frog",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,6 +11,7 @@
         "Order": "Anura",
         "Family": "Ranidae",
         "Genus": "Lithobates",
-        "Species": "L.\u00a0blairi"
-    }
+        "Species": "blairi"
+    },
+    "ScientificName": "Lithobates blairi"
 }

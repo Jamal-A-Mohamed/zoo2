@@ -2,7 +2,7 @@
     "CommonName": "Speke's Gazelle",
     "BriefSummary": "The Speke's gazelle (Gazella spekei) is the smallest of the gazelle species. It is confined to the Horn of Africa, where it inhabits stony brush, grass steppes, and semideserts. This species has been sometimes regarded as a subspecies of the Dorcas gazelle, though this is now widely disregarded. Severe habitat fragmentation means it is now impossible to assess the natural migratory or nomadic patterns of G. spekei. Its numbers are under threat, and despite an increase in population, the IUCN in 2007 announced its status had changed from vulnerable to endangered. A captive population is maintained, and the wild population exists in the lower tens of thousands. As of 2008, this gazelle is classified as endangered under the IUCN Red List.\nSpeke's gazelle is named after John Hanning Speke, an English explorer of Central Africa.",
     "WikiContents": "The Speke's gazelle (Gazella spekei) is the smallest of the gazelle species. It is confined to the Horn of Africa, where it inhabits stony brush, grass steppes, and semideserts. This species has been sometimes regarded as a subspecies of the Dorcas gazelle, though this is now widely disregarded. Severe habitat fragmentation means it is now impossible to assess the natural migratory or nomadic patterns of G. spekei. Its numbers are under threat, and despite an increase in population, the IUCN in 2007 announced its status had changed from vulnerable to endangered. A captive population is maintained, and the wild population exists in the lower tens of thousands. As of 2008, this gazelle is classified as endangered under the IUCN Red List.\nSpeke's gazelle is named after John Hanning Speke, an English explorer of Central Africa.\n\n\n== External links ==\nSpeke's gazelle facts\n\n\n== References ==\n\n\n== External links ==\nPhotos of Speke's gazelle at Al Wabra Wildlife Preserve",
-    "ImageURL": "SpekesGazelle.jpg",
+    "ImageURL": "SpekesGazelle_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Speke%27s_gazelle",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,6 +11,7 @@
         "Order": "Artiodactyla",
         "Family": "Bovidae",
         "Genus": "Gazella",
-        "Species": "G.\u00a0spekei"
-    }
+        "Species": "spekei"
+    },
+    "ScientificName": "Gazella spekei"
 }

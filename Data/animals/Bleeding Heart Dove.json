@@ -2,7 +2,7 @@
     "CommonName": "Bleeding Heart Dove",
     "BriefSummary": "Gallicolumba is a mid-sized genus of ground-dwelling doves (family Columbidae) which occur in rainforests on the Philippines, Indonesia, and in the Pacific region. They are not closely related to the American ground doves (genus Columbina). Rather, the present genus is closest to the thick-billed ground dove.\nThis genus includes the bleeding-hearts known from the Philippines. Most are named for their vivid-red patch on the breast, which looks startlingly like a bleeding wound in some species and has reminded naturalists of a dagger stab. The diet of doves of this genus consists of fruits and seed.",
     "WikiContents": "Gallicolumba is a mid-sized genus of ground-dwelling doves (family Columbidae) which occur in rainforests on the Philippines, Indonesia, and in the Pacific region. They are not closely related to the American ground doves (genus Columbina). Rather, the present genus is closest to the thick-billed ground dove.\nThis genus includes the bleeding-hearts known from the Philippines. Most are named for their vivid-red patch on the breast, which looks startlingly like a bleeding wound in some species and has reminded naturalists of a dagger stab. The diet of doves of this genus consists of fruits and seed.\n\n\n== Systematics and extinctions ==\nGallicolumba might be ranked as a (very small) subfamily, but the available data suggests that they are better considered part of a quite basal radiation of Columbidae which consists of many small and often bizarre lineages (e.g. Goura and Otidiphaps which are ecologically convergent to Galliformes, and maybe even the famous didines (Raphinae).\n\n\n=== Species ===\nLuzon bleeding-heart, Gallicolumba luzonica\nCatanduanes bleeding heart, Gallicolumba luzonica rubiventris - possibly extinct (late 20th century?)\nMindanao bleeding-heart, Gallicolumba crinigera\nBasilan bleeding-heart, Gallicolumba crinigera bartletti - possibly extinct (mid-20th century?)\nMindoro bleeding-heart, Gallicolumba platenae\nNegros bleeding-heart, Gallicolumba keayi\nSulu bleeding-heart, Gallicolumba menagei - possibly extinct (late 1990s?)\nCinnamon ground dove, Gallicolumba rufigula\nSulawesi ground dove, Gallicolumba tristigmataMany of the Pacific ground doves were removed from Gallicolumba (which was non-monophyletic) and reassigned to genus Alopecoenas:\n\n\n== References ==\n\nGibbs, David; Barnes, Eustace & Cox, John (2001): Pigeons and Doves. Pica Press, The Banks, ISBN 1-873403-60-7\nSteadman, David William (2006): Extinction and Biogeography of Tropical Pacific Birds. University of Chicago Press. ISBN 0-226-77142-3\ndel Hoyo, J.; Elliot, A. & Sargatal, J. (editors). (1997). Handbook of the Birds of the World. Volume 4: Sandgrouse to Cuckoos. Lynx Edicions. ISBN 84-87334-22-9\n\n\n== External links ==\n Media related to Gallicolumba at Wikimedia Commons\n Data related to Gallicolumba at Wikispecies",
-    "ImageURL": "BleedingHeartDove.jpg",
+    "ImageURL": "BleedingHeartDove_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Gallicolumba",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -10,6 +10,6 @@
         "Class": "Aves",
         "Order": "Columbiformes",
         "Family": "Columbidae",
-        "Genus": "GallicolumbaHeck, 1849[1]"
+        "Genus": "GallicolumbaHeck"
     }
 }

@@ -2,7 +2,7 @@
     "CommonName": "Vietnamese Walkingstick",
     "BriefSummary": "Medauroidea extradentata, commonly known as the Vietnamese or Annam walking stick, is a species of the family Phasmatidae. They originate in Vietnam and are commonly found in tropical forests there. They eat a variety of foliage, though in captivity they commonly eat blackberry bramble, hawthorn, oak, red maple and rose.",
     "WikiContents": "Medauroidea extradentata, commonly known as the Vietnamese or Annam walking stick, is a species of the family Phasmatidae. They originate in Vietnam and are commonly found in tropical forests there. They eat a variety of foliage, though in captivity they commonly eat blackberry bramble, hawthorn, oak, red maple and rose.\n\n\n== Physical characteristics ==\nVietnamese walking sticks are approximately 4-5 inches (10\u201312 cm) in length. Their heads are elongated and oval shaped with thread-like antennae. Their chewing mouthparts are specially adapted for eating plant material. Along its thorax are a number of small pointed bumps. Their middle set of legs show small flanges and minute spikes. These walking sticks are brownish in color and have six legs, which is a characteristic of all insects. Both male and female Vietnamese walking sticks have no wings.\n\n\n== Reproduction ==\nMedauroidea extradentata is mainly parthenogenetic, meaning they are asexual, making males very rare in the species. The female drops hundreds of eggs onto the forest floor, these eggs hatch in a few months. The eggs of this species are mottled with black and white and capped with black.\n\n\n== Life cycle ==\nThe Vietnamese walking stick is short lived, living between 5\u20137 months. Nymphs look nearly identical to their parents except in size. They molt about 6 times before they become adults. At 3 months of age they become able to reproduce. Their main predators are birds and small mammals, though their camouflage helps them combat this.\n\n\n== Notes ==\n\n\n== References ==\nStephanie Boucher, Hirondelle Varady-Szabo (2005). \"Effects of Different Diets on the Survival, Longevity and Growth Rate of the Annam Stick Insect, Medauroidea extradentata (Phasmatodea: Phasmatidae)\". Journal of Orthoptera Research. 14 (1): 115\u2013118. doi:10.1665/1082-6467(2005)14[115:EODDOT]2.0.CO;2. ISSN 1082-6467. JSTOR 3657114.\n\n\n== External links ==\nPhasmid Study Group: Medauroidea extradentata",
-    "ImageURL": "VietnameseWalkingstick.jpg",
+    "ImageURL": "VietnameseWalkingstick_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Medauroidea_extradentata",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -12,6 +12,7 @@
         "Suborder": "Verophasmatodea",
         "Family": "Phasmatidae",
         "Genus": "Medauroidea",
-        "Species": "M.\u00a0extradentata"
-    }
+        "Species": "extradentata"
+    },
+    "ScientificName": "Medauroidea extradentata"
 }

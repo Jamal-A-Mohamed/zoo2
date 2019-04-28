@@ -2,7 +2,7 @@
     "CommonName": "Plush-crested Jay",
     "BriefSummary": "The plush-crested jay (Cyanocorax chrysops) is a jay of the family Corvidae (which includes the crows and their many allies). It is found in central-southern South America: in southwestern Brazil, Bolivia, Paraguay, Uruguay, and northeastern Argentina, including southern regions of the Amazon Basin river systems bordering the Pantanal.\nThis is an elegant medium-sized bird, dark plumaged with a cream-yellow breast; the bulky tail is also cream colored, top and underneath, for the lower half.",
     "WikiContents": "The plush-crested jay (Cyanocorax chrysops) is a jay of the family Corvidae (which includes the crows and their many allies). It is found in central-southern South America: in southwestern Brazil, Bolivia, Paraguay, Uruguay, and northeastern Argentina, including southern regions of the Amazon Basin river systems bordering the Pantanal.\nThis is an elegant medium-sized bird, dark plumaged with a cream-yellow breast; the bulky tail is also cream colored, top and underneath, for the lower half.\n\n\n== Distribution ==\n\nThe range of the plush-crested jay extends from the Southern Region, Brazil with Uruguay and approaches the South Atlantic coast, but avoids the coast, approximating a 400 to 150 km coastal strip; the coastal-inland range extends 3500 km from S\u00e3o Paulo south to Rio Grande do Sul bordering Uruguay. The inland range continues in northwestern Uruguay and extends northwest through northern Argentina, Paraguay\u2013Bolivia, and through the Pantanal at the southern Cerrado; the range extends in two arms, to the northwest to northern Bolivia, and northeastwards to headwaters of the Amazon Basin Tapaj\u00f3s River.\nIn the Amazon Basin, central Bolivia is the northwest range limit, the headwater tributaries to the north-northeast flowing Madeira River; the next range skips the Guapor\u00e9 River, (a northwest-flowing tributary to the Madeira), eastwards on the Brazil\u2013Bolivia border, and is next found at the headwaters of the Tapaj\u00f3s River, and joins on the east the extreme headwaters of the Xingu River.\nA disjunct range occurs downstream on the Tapaj\u00f3s and east towards the Xingu River, a block 850 by 750 kilometres (530 mi \u00d7 470 mi). Two other localized populations occur in the Amazon Basin, one on the Amazon River, the other on the downstream Madeira River.\n\n\n== References ==\n\n\n== External links ==\nPlush-crested jay videos on the Internet Bird Collection\nStamps (for Argentina, Paraguay) with RangeMap\nPlush-crested jay photo gallery VIREO\nPhoto-High Res; Article mangoverde\nPhoto-Medium Res; Article pantanalbirds\u2014\"Birds of the Pantanal\"\nPhoto-High Res; Article tropicalbirding\u2013Argentina",
-    "ImageURL": "PlushcrestedJay.jpg",
+    "ImageURL": "PlushcrestedJay_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Plush-crested_jay",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -11,6 +11,7 @@
         "Order": "Passeriformes",
         "Family": "Corvidae",
         "Genus": "Cyanocorax",
-        "Species": "C.\u00a0chrysops"
-    }
+        "Species": "chrysops"
+    },
+    "ScientificName": "Cyanocorax chrysops"
 }

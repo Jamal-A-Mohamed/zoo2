@@ -2,7 +2,7 @@
     "CommonName": "Prairie Kingsnake",
     "BriefSummary": "Lampropeltis calligaster is a species of kingsnake known commonly as the prairie kingsnake or yellow-bellied kingsnake.",
     "WikiContents": "Lampropeltis calligaster is a species of kingsnake known commonly as the prairie kingsnake or yellow-bellied kingsnake.\n\n\n== Geographic range ==\nIt is found throughout the midwestern and southeastern United States, from Nebraska to Maryland, Florida to Texas.\n\n\n== Description ==\nIt is light brown or grey in color, with dark grey, dark brown, or reddish-brown blotching down the length of their bodies. They are capable of growing to lengths of 76\u2013102 cm (30\u201340 in). They are easily mistaken for various species of rat snake of the genus Pantherophis, which share habitat, and can have similar markings. Some specimens have their markings faded, to appear almost a solid brown color.  Juveniles usually have a brown stripe down the back of their bodies.  They have two black spots behind the head and smaller black spots down the back on both sides of the stripe.\n\n\n== Behavior ==\nPrairie kingsnakes' preferred habitat is open grassland with loose, dry soil, typically on the edge of a forested region, not far from a permanent source of water. Their diet consists primarily of rodents, but they will also consume lizards, frogs and occasionally other snakes. They are nonvenomous, and typically docile. Like most colubrids, if harassed they will shake their tail, which if in dry leaf litter can sound remarkably like a rattlesnake. They are not typically prone to biting, and if handled will often excrete a foul-smelling musk.  When threatened, they flatten and appear to have white spots.\n\n\n== Subspecies ==\nThere are three subspecies:\nPrairie kingsnake, L. c. calligaster (Harlan, 1827)\nSouth Florida mole kingsnake, L. c. occipitolineata Price, 1987\nMole kingsnake or mole snake, L. c. rhombomaculata (Holbrook, 1840)\n\n\n== References ==\n\nFlorida Museum of Natural History: Lampropeltis calligaster rhombomaculata\nPrairie Kingsnake, Reptiles and Amphibians of Iowa",
-    "ImageURL": "PrairieKingsnake.jpg",
+    "ImageURL": "PrairieKingsnake_sm.jpg",
     "Source": "https://en.wikipedia.org/wiki/Lampropeltis_calligaster",
     "Taxonomy": {
         "Kingdom": "Animalia",
@@ -12,6 +12,7 @@
         "Suborder": "Serpentes",
         "Family": "Colubridae",
         "Genus": "Lampropeltis",
-        "Species": "L.\u00a0calligaster"
-    }
+        "Species": "calligaster"
+    },
+    "ScientificName": "Lampropeltis calligaster"
 }
