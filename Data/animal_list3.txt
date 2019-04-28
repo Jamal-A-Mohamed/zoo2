@@ -11,11 +11,6 @@ African Palm Civet
 African Penguin
 African Tree Toad
 African Wild Dog
-African bullfrog
-African clawed frog
-African elephant
-African pancake tortoise
-African pygmy goose
 Ainu Dog
 Airedale Terrier
 Akbash
@@ -23,9 +18,7 @@ Akita
 Alaskan Malamute
 Albatross
 Aldabra Giant Tortoise
-Aldabra giant tortoise
 Alligator
-Alligator snapping turtle
 Alpine Dachsbracke
 American Bulldog
 American Cocker Spaniel
@@ -35,8 +28,6 @@ American Foxhound
 American Pit Bull Terrier
 American Staffordshire Terrier
 American Water Spaniel
-American alligator
-American flamingo
 Anatolian Shepherd Dog
 Angelfish
 Ant
@@ -50,30 +41,25 @@ Armadillo
 Asian Elephant
 Asian Giant Hornet
 Asian Palm Civet
-Asian giant toad
 Asiatic Black Bear
 Australian Cattle Dog
 Australian Kelpie Dog
 Australian Mist
 Australian Shepherd
 Australian Terrier
-Australian rainbow lorikeet
 Avocet
 Axolotl
 Aye Aye
 Baboon
+Bactrian Camel
 Badger
-Baja ratsnake
 Balinese
-Ball python
-Bamboo partridge
 Banded Palm Civet
 Bandicoot
 Barb
 Barn Owl
 Barnacle
 Barracuda
-Barred owl
 Basenji Dog
 Basking Shark
 Basset Hound
@@ -83,8 +69,6 @@ Beagle
 Bear
 Bearded Collie
 Bearded Dragon
-Bearded barbet
-Beautiful fruit dove
 Beaver
 Bedlington Terrier
 Beetle
@@ -97,36 +81,18 @@ Birds Of Paradise
 Birman
 Bison
 Black Bear
+Black Rhinoceros
 Black Russian Terrier
 Black Widow Spider
-Black crowned-crane
-Black howler
-Black tetra
-Black vulture
-Black-banded trinket snake
-Black-footed cat
-Black-handed spider monkey
-Black-naped fruit-dove
-Black-necked swan
-Black-nobbed map turtle
-Blacksmith plover
 Bloodhound
 Blue Lacy Dog
 Blue Whale
-Blue crane
-Blue duiker
-Blue-bellied roller
-Blue-crowned motmot
-Blue-faced honeyeater
-Blue-tongued skink
 Bluetick Coonhound
-Boa constrictor
 Bobcat
 Bolognese Dog
 Bombay
 Bongo
 Bonobo
-Bony fish
 Booby
 Border Collie
 Border Terrier
@@ -134,16 +100,11 @@ Bornean Orang-utan
 Borneo Elephant
 Boston Terrier
 Bottle Nosed Dolphin
-Box turtle
 Boxer Dog
 Boykin Spaniel
 Brazilian Terrier
-Bristlenose catfish
 Brown Bear
-Brush-tailed rat-kangaroo
 Budgerigar
-Buff-banded rail
-Buff-crested bustard
 Buffalo
 Bull Mastiff
 Bull Shark
@@ -155,16 +116,12 @@ Burmese
 Burrowing Frog
 Butterfly
 Butterfly Fish
-C:\Users\Star\AppData\Local\Programs\Python\Python37-32\python.exe E:/Python/Zoo/temp.py
 Caiman
 Caiman Lizard
-Caiman lizard
 Cairn Terrier
-California sea lion
 Camel
 Canaan Dog
-Cape porcupine
-Cape thick-knee
+Capybara
 Caracal
 Carolina Dog
 Cassowary
@@ -172,44 +129,34 @@ Cat
 Caterpillar
 Catfish
 Cavalier King Charles Spaniel
-Cave snake
 Centipede
 Cesky Fousek
 Chameleon
 Chamois
+Cheetah
 Chesapeake Bay Retriever
-Chestnut-mandibled toucan
+Chicken
 Chihuahua
+Chimpanzee
 Chinchilla
 Chinese Crested Dog
-Chinese three-striped box turtle
 Chinook
 Chinstrap Penguin
 Chipmunk
 Chow Chow
 Cichlid
-Cinereous vulture
 Clouded Leopard
 Clown Fish
 Clumber Spaniel
-Coahuila box turtle
 Coati
 Cockroach
-Coconut lorikeet
 Collared Peccary
 Collie
 Common Buzzard
 Common Frog
 Common Loon
 Common Toad
-Common barn owl
-Common ostrich
-Common squirrel monkey
-Copperhead
 Coral
-Corn snake
-Cotton-top tamarin
-Cottonmouth
 Cottontop Tamarin
 Cougar
 Cow
@@ -220,21 +167,16 @@ Crane
 Crested Penguin
 Crocodile
 Cross River Gorilla
-Crowned lemur
 Curly Coated Retriever
 Cuscus
 Cuttlefish
 Dachshund
 Dalmatian
 Darwin's Frog
-De BrazzaÃ¢â‚¬â„¢s monkey
 Deer
 Desert Tortoise
-Desert tortoise
 Deutsche Bracke
 Dhole
-Diamond python
-Diamondback terrapin
 Dingo
 Discus
 Doberman Pinscher
@@ -256,22 +198,13 @@ Eagle
 Earwig
 Eastern Gorilla
 Eastern Lowland Gorilla
-Eastern box turtle
-Eastern diamondback rattlesnake
-Eastern hognose snake
-Eastern indigo snake
-Eastern screech owl
 Echidna
 Edible Frog
 Egyptian Mau
-Egyptian tortoise
 Electric Eel
-Elegant crested tinamou
 Elephant
 Elephant Seal
 Elephant Shrew
-Emerald starling
-Emerald tree boa
 Emperor Penguin
 Emperor Tamarin
 Emu
@@ -282,9 +215,8 @@ Entlebucher Mountain Dog
 Epagneul Pont Audemer
 Eskimo Dog
 Estrela Mountain Dog
-Eurasian eagle owl
 Falcon
-Fennec fox
+Fennec Fox
 Ferret
 Field Spaniel
 Fin Whale
@@ -292,13 +224,11 @@ Finnish Spitz
 Fire-Bellied Toad
 Fish
 Fishing Cat
-Fishing cat
 Flamingo
 Flat Coat Retriever
 Flounder
 Fly
 Flying Squirrel
-ForstenÃ¢â‚¬â„¢s lorikeet
 Fossa
 Fox
 Fox Terrier
@@ -308,9 +238,10 @@ Frilled Lizard
 Frog
 Fur Seal
 Galapagos Penguin
+Galapagos Tortoise
 Gar
-Garden tree boa
 Gecko
+Gentoo Penguin
 Geoffroys Tamarin
 Gerbil
 German Pinscher
@@ -320,60 +251,45 @@ Giant African Land Snail
 Giant Clam
 Giant Panda Bear
 Giant Schnauzer
-Giant anteater
-Giant otter
 Gibbon
 Gila Monster
 Giraffe
 Glass Lizard
-Glass lizard
 Glow Worm
 Goat
+Golden Lion Tamarin
 Golden Oriole
 Golden Retriever
-Golden eagle
 Goose
 Gopher
-Gopher tortoise
 Gorilla
 Grasshopper
 Great Dane
 Great White Shark
-Great horned owl
 Greater Swiss Mountain Dog
 Green Bee-Eater
-Green anaconda
-Green and black poison frog
-Green aracari
-Green crested basilisk
-Green woodhoopoe
-Green-winged macaw
 Greenland Dog
 Grey Mouse Lemur
 Grey Reef Shark
 Grey Seal
-Grey fox
 Greyhound
+Grizzly Bear
 Grouse
 Guinea Fowl
-Guinea hog
+Guinea Pig
 Guppy
 Hammerhead Shark
 Hamster
 Hare
 Harrier
-HarrisÃ¢â‚¬â„¢ hawk
 Havanese
 Hedgehog
-Helmeted guineafowl
 Hercules Beetle
-HermannÃ¢â‚¬â„¢s tortoise
 Hermit Crab
 Heron
 Highland Cattle
 Himalayan
-HoffmannÃ¢â‚¬â„¢s two-toed sloth
-HomeÃ¢â‚¬â„¢s hingeback tortoise
+Hippopotamus
 Honey Bee
 Horn Shark
 Horned Frog
@@ -381,6 +297,7 @@ Horse
 Horseshoe Crab
 Howler Monkey
 Human
+Humboldt Penguin
 Hummingbird
 Humpback Whale
 Hyena
@@ -399,10 +316,9 @@ Irish Setter
 Irish WolfHound
 Jack Russel
 Jackal
-Jambu fruit-dove
+Jaguar
 Japanese Chin
 Japanese Macaque
-Japanese pond turtle
 Javan Rhinoceros
 Javanese
 Jellyfish
@@ -411,27 +327,24 @@ Kangaroo
 Keel Billed Toucan
 Killer Whale
 King Crab
+King Penguin
 Kingfisher
 Kiwi
 Koala
 Komodo Dragon
-Komodo dragon
-Kori bustard
 Kudu
 Labradoodle
 Labrador Retriever
-Lady RossÃ¢â‚¬â„¢ turaco
 Ladybird
-Lar gibbon
-Laughing kookaburra
 Leaf-Tailed Gecko
 Lemming
 Lemur
 Leopard
 Leopard Cat
 Leopard Seal
-Lesser Madagascar hedgehog tenrec
+Leopard Tortoise
 Liger
+Lion
 Lionfish
 Little Penguin
 Lizard
@@ -441,7 +354,6 @@ Long-Eared Owl
 Lynx
 Macaroni Penguin
 Macaw
-Madagascar hissing cockroach
 Magellanic Penguin
 Magpie
 Maine Coon
@@ -451,18 +363,13 @@ Maltese
 Manatee
 Mandrill
 Manta Ray
-Marbled teal
-Marigold lorikeet
 Marine Toad
 Markhor
 Marsh Frog
 Masked Palm Civet
-Masked lapwing
 Mastiff
 Mayfly
 Meerkat
-Mexican beaded lizard
-Milksnake
 Millipede
 Minke Whale
 Mole
@@ -480,69 +387,56 @@ Mountain Gorilla
 Mountain Lion
 Mouse
 Mule
-Mute swan
-Naked mole-rat
 Neanderthal
 Neapolitan Mastiff
-Neon tetra
-New Caledonia giant gecko
 Newfoundland
 Newt
-Nicobar pigeon
 Nightingale
 Norfolk Terrier
-North American black bear
-North American river otter
 Norwegian Forest
 Numbat
 Nurse Shark
 Ocelot
 Octopus
+Okapi
 Old English Sheepdog
 Olm
+Opossum
 Orang-utan
+Ostrich
 Otter
 Oyster
 Pademelon
-PallasÃ¢â‚¬â„¢s cat
 Panther
 Parrot
 Patas Monkey
 Peacock
-Peacock eel
 Pekingese
 Pelican
 Penguin
 Persian
 Pheasant
-Pheasant pigeon
-Philippine sail-finned lizard
 Pied Tamarin
-Pied imperial pigeon
 Pig
 Pika
 Pike
 Pink Fairy Armadillo
 Piranha
-Plains zebra
-Platyfish
 Platypus
-Plush-crested jay
 Pointer
 Poison Dart Frog
+Polar Bear
 Pond Skater
 Poodle
 Pool Frog
 Porcupine
 Possum
 Prawn
-Prehensile-tailed skink
-PrevostÃ¢â‚¬â„¢s squirrel
 Proboscis Monkey
-Process finished with exit code 0
 Puffer Fish
 Puffin
 Pug
+Puma
 Purple Emperor
 Puss Moth
 Pygmy Hippopotamus
@@ -555,48 +449,28 @@ Rabbit
 Raccoon
 Raccoon Dog
 Radiated Tortoise
-Radiated tortoise
 Ragdoll
-Rainbow sharkminnow
 Rat
 Rattlesnake
 Red Knee Tarantula
-Red River hog
+Red Panda
 Red Wolf
-Red fox
-Red junglefowl
-Red panda
-Red-billed hornbill
-Red-billed leiothrix
-Red-crested cardinal
-Red-crowned crane
-Red-flanked duiker
 Red-handed Tamarin
-Red-shouldered hawk
-Red-tailed hawk
-Red-tailed ratsnake
 Reindeer
 Rhinoceros
-Rhinoceros snake
-Ring-tailed lemur
 River Dolphin
 River Turtle
-Roadrunner
 Robin
 Rock Hyrax
 Rockhopper Penguin
-Roseate spoonbill
+Roseate Spoonbill
 Rottweiler
 Royal Penguin
-Ruddy duck
 Russian Blue
 Sabre-Toothed Tiger
 Saint Bernard
 Salamander
-San Esteban Island chuckwalla
 Sand Lizard
-Sand cat
-Sandhill crane
 Saola
 Scorpion
 Scorpion Fish
@@ -609,7 +483,6 @@ Sea Turtle
 Sea Urchin
 Seahorse
 Seal
-Secretary bird
 Serval
 Sheep
 Shih Tzu
@@ -628,19 +501,11 @@ Snake
 Snapping Turtle
 Snowshoe
 Snowy Owl
-Snowy-headed robin chat
-Solomon Islands leaf frog
 Somali
 South China Tiger
-Southern cassowary
-Southern ground hornbill
-Southern screamer
-Southern three-banded armadillo
 Spadefoot Toad
 Sparrow
-Speckled mousebird
 Spectacled Bear
-Spectacled owl
 Sperm Whale
 Spider Monkey
 Spiny Dogfish
@@ -657,34 +522,26 @@ Stick Insect
 Stingray
 Stoat
 Striped Rocket Frog
-Striped skunk
-Sulphur-crested cockatoo
 Sumatran Elephant
 Sumatran Orang-utan
 Sumatran Rhinoceros
 Sumatran Tiger
-Sumatran orangutan
 Sun Bear
-Sunbittern
-Superb starling
 Swan
 Tang
 Tapanuli Orang-utan
 Tapir
-Tarantula
 Tarsier
 Tasmanian Devil
-Taveta golden weaver
 Tawny Owl
-Tawny frogmouth
 Termite
 Tetra
 Thorny Devil
 Tibetan Mastiff
 Tiffany
 Tiger
+Tiger Salamander
 Tiger Shark
-Timber rattlesnake
 Tortoise
 Toucan
 Tree Frog
@@ -696,11 +553,7 @@ Uakari
 Uguisu
 Umbrellabird
 Vampire Bat
-Vasa parrot
 Vervet Monkey
-Victoria crowned pigeon
-Violet-backed starling
-Virginia opossum
 Vulture
 Wallaby
 Walrus
@@ -713,29 +566,17 @@ Weasel
 Welsh Corgi
 West Highland Terrier
 Western Gorilla
-Western ratsnake
+Western Lowland Gorilla
 Whale Shark
 Whippet
 White Faced Capuchin
 White Rhinoceros
 White Tiger
-White rhinoceros
-White stork
-White-crested laughing thrush
-White-headed buffalo weaver
-White-naped crane
-White-nosed coati
-White-throated ground-dove
-WhiteÃ¢â‚¬â„¢s tree frog
 Wild Boar
-Wild cat
-Wild turkey
 Wildebeest
 Wolf
 Wolverine
-Woma
 Wombat
-Wood stork
 Woodlouse
 Woodpecker
 Woolly Mammoth
@@ -744,8 +585,6 @@ Wrasse
 X-Ray Tetra
 Yak
 Yellow-Eyed Penguin
-Yellow-backed duiker
-Yellow-headed poison frog
 Yorkshire Terrier
 Zebra
 Zebra Shark
