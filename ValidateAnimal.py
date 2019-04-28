@@ -41,7 +41,7 @@ def main():
         animals_found.append(animal["ImageURL"])
 
         if "Zone" not in animal:
-            animal["Zone"] = choice('ABCDEFGHIJK')
+            animal["Zone"] = '* #### ' + choice('ABCDEFGHIJK')
             save_json(animal, file)
 
     print(sorted(list(animals_found)))
