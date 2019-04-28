@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 
 {% block javascript %}
-    <script src="http://3.89.175.127/Static/js/jquery.ellipsis.js"></script>
+    <script src="http://3.89.175.127:80/Static/js/jquery.ellipsis.js"></script>
 {% endblock %}
 
-<link rel="stylesheet" href="http://3.89.175.127/Static/css/heroic-features.css">
+<link rel="stylesheet" href="http://3.89.175.127:80/Static/css/heroic-features.css">
 
 
 {% block body %}
@@ -16,7 +16,7 @@
 
     <!-- Jumbotron Header -->
     <header class="jumbotron my-3">
-            <img class="jumbotron-fluid w-100" src=http://3.89.175.127/Static/banners/{{ banner }}>
+            <img class="jumbotron-fluid w-100" src=http://3.89.175.127:80/Static/banners/{{ banner }}>
       <h4 class="display-3 text-center">A Warm Welcome to the zoo!</h4>
       <p class="lead"></p>
     </header>
@@ -26,7 +26,7 @@
 
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
-            <img class="card-img-top" src=http://3.89.175.127/Static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
+            <img class="card-img-top" src=http://3.89.175.127:80/Static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
                  , height="325">
           <div class="card-body">
             <h4 class="card-title">{{animal.CommonName}}</h4>
@@ -44,7 +44,7 @@
 
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
-            <img class="card-img-top" src=http://3.89.175.127/Static/Images/{{ animal2.ImageURL }} alt={{ animal2.CommonName }}, width="500"
+            <img class="card-img-top" src=http://3.89.175.127:80/Static/Images/{{ animal2.ImageURL }} alt={{ animal2.CommonName }}, width="500"
                  , height="325">
           <div class="card-body">
             <h4 class="card-title">{{animal2.CommonName}}</h4>
@@ -62,7 +62,7 @@
 
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
-            <img class="card-img-top" src=http://3.89.175.127/Static/Images/{{ animal3.ImageURL }} alt={{ animal3.CommonName }}, width="500"
+            <img class="card-img-top" src=http://3.89.175.127:80/Static/Images/{{ animal3.ImageURL }} alt={{ animal3.CommonName }}, width="500"
                  , height="325">
           <div class="card-body">
             <h4 class="card-title">{{animal3.CommonName}}</h4>
@@ -101,8 +101,8 @@
 
   <!-- Bootstrap core JavaScript -->
 
-  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="http://3.89.175.127:80/Static/vendor/jquery/jquery.min.js"></script>
+  <script src="http://3.89.175.127:80/Static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <script>
     ('.box').ellipsis({
