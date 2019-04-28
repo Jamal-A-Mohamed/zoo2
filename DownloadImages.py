@@ -5,11 +5,14 @@ Download wiki images and save them to Image folder and change .json data file to
 """
 
 from pathlib2 import Path
-from util import load_json, save_json
+from util import load_json, save_json, resize_image
 import requests
 import shutil
 import mimetypes
 
+
+UNDOWNLOADED_URL = "https://upload.wikimedia.org"
+SMALL_SUFFIX = "_sm" # means that image has been resized to smaller
 
 def main():
     cwd = Path.cwd()
@@ -22,13 +25,25 @@ def main():
 
         url = animal["ImageURL"]
 
-        img_path = cwd / 'Static' / 'Images' / file.stem
+        if(UNDOWNLOADED_URL in url):
 
-        image_loc = download_image(url, img_path)
+            img_path = cwd / 'Static' / 'Images' / file.stem
+            image_loc = download_image(url, img_path)
 
-        animal["ImageURL"] = Path(image_loc).name
+            animal["ImageURL"] = Path(image_loc).name
+            save_json(animal, file)
 
-        save_json(animal, file)
+        # resize image to small version
+        if(UNDOWNLOADED_URL not in url and SMALL_SUFFIX not in url):
+            img_path = cwd / 'Static' / 'Images' / url
+            sm_img_path = cwd / 'Static' / 'Images' / (img_path.stem + SMALL_SUFFIX + img_path.suffix )
+            resize_image(img_path, file_out=sm_img_path)
+
+            animal["ImageURL"] = Path(sm_img_path).name
+            save_json(animal, file)
+
+
+
 
 
 
@@ -50,7 +65,7 @@ def download_image(url, save_file):
 
 def get_extension(url):
     """Try to find known image file extension in url"""
-    img_extensions = ('.jpg', '.png', '.jpeg', '.svg', '.gif', '.tiff', '.xcf')
+    img_extensions = ('.jpg', '.png', '.jpeg', '.gif', '.tiff')
     for ext in img_extensions:
         if ext in url:
             return ext
