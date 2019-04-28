@@ -23,7 +23,7 @@ from util import random_banner
 arr = []
 
 animaltoGet = {'CommonName': "Addax"}
-animal_list = [animal['CommonName'] for animal in collection.find({})]
+animal_list = list(sorted([animal['CommonName'] for animal in collection.find({})]))
 
 @app.route("/Static/{etc}")
 def static123(etc):
@@ -262,7 +262,8 @@ def get_animals_from_classification(level, classification):
 
     key = f"Taxonomy.{level}"
     value = classification
-    return [animal['CommonName'] for animal in collection.find({key:value})]
+    matching = [animal['CommonName'] for animal in collection.find({key:value})]
+    return list(sorted(matching))
 
 
 if __name__ == '__main__':
