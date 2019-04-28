@@ -4,7 +4,7 @@
     <h1>{{animal.CommonName}}</h1>
 
     <h4><i>{{ animal.ScientificName }}</i></h4>
-    <img class="img-thumbnail" src=http://3.89.175.127:80/Static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
+    <img class="img-thumbnail" src={{ static_site }}/Static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
              , height="325">
     {{animal.BriefSummary | safe}}
 

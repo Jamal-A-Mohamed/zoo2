@@ -27,6 +27,9 @@ mongo = PyMongo(app)
 collection = mongo.db["animals"]
 
 
+static_site = "https://3.214.189.209"
+
+
 # empty array
 arr = []
 
@@ -35,7 +38,7 @@ animal_list = list(sorted([animal['CommonName'] for animal in collection.find({}
 
 @app.route("/Static/{etc}")
 def static123(etc):
-    return redirect(f"http://3.89.175.127:80/Static/{etc}")
+    return redirect(f"{static_site}/Static/{etc}")
 
 
 @app.route("/")
@@ -47,7 +50,7 @@ def index():
     animal2['html_summary'] = md(animal2['BriefSummary'])
     animal3['html_summary'] = md(animal3['BriefSummary'])
 
-    return render_template('index.html', animal=animal, animal2=animal2, animal3=animal3, banner=random_banner())
+    return render_template('index.html', static_site=static_site, animal=animal, animal2=animal2, animal3=animal3, banner=random_banner())
 
 
 @app.route("/glossary")
@@ -132,7 +135,7 @@ def animal_page(animal_name):
         carenotes = animal["Carenotes"]
         for field in carenotes.keys():
             carenotes[field] = md(carenotes[field], field, heading='h4')
-    return render_template('animal.html', animal=animal, carenotes=carenotes)
+    return render_template('animal.html', static_site=static_site, animal=animal, carenotes=carenotes)
 
 
 @app.route('/login', methods=['POST', 'GET'])
@@ -153,9 +156,9 @@ def login():
                 return redirect(url_for('index'))
         else:
             print("error should be printed")
-            return render_template('login.html', error='<div class="alert alert-danger"> Wrong username or password<strong></strong>\
+            return render_template('login.html', static_site=static_site, error='<div class="alert alert-danger"> Wrong username or password<strong></strong>\
                         </div>')
-    return render_template('login.html')
+    return render_template('login.html', static_site=static_site)
 
 
 @app.route('/logout')
@@ -204,7 +207,7 @@ def edit_animal(animal_name):
             carenotes = None
             if "Carenotes" in animal:
                 carenotes = animal["Carenotes"]
-            return render_template('edit_animal.html', animal=animal,
+            return render_template('edit_animal.html', static_site=static_site, animal=animal,
                                    carenotes=carenotes)  # username=session['username']
         else:
             return "You are not logged in"
@@ -222,7 +225,7 @@ def edit_animal(animal_name):
 def edit():
     if request.method == 'GET':
         # if session['username'] is not None:
-        return render_template('edit_animal.html', animal=None, carenotes=None)  # username=session['username']
+        return render_template('edit_animal.html',static_site=static_site, animal=None, carenotes=None)  # username=session['username']
     animals = mongo.db.animals
 
     update_dict = form2dict(request.form, image=request.files['image'])
@@ -280,7 +283,8 @@ def wiki_attribution(source_url):
     return f'This article uses material from the Wikipedia article <a href="{source_url}">"{source_url.split("/")[-1]}"</a>, which is released under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0</a> '
 
 if __name__ == '__main__':
-    app.secret_key = 'mysecret'
-    app.run(host="0.0.0.0", port=5002)
+    app.secret_key = 'JR4WRBQUR6SDKuPTjrkCGBJ2UFF2TXxqhh'
+    app.run(ssl_context=('cert.pem','key.pem'), host="0.0.0.0", port=5002)
+    # app.run(host="0.0.0.0", port=5002)
     # app.run(host="127.0.0.1", port=5000)
 
