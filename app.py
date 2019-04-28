@@ -25,6 +25,10 @@ arr = []
 animaltoGet = {'CommonName': "Addax"}
 animal_list = [animal['CommonName'] for animal in collection.find({})]
 
+@app.route("/Static/{etc}")
+def static123(etc):
+    return redirect(f"http://3.89.175.127:80/Static/{etc}")
+
 
 @app.route("/")
 def index():
