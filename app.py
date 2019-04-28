@@ -17,6 +17,7 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/zoo"
 app.secret_key = 'mysecret'
 mongo = PyMongo(app)
 collection = mongo.db["animals"]
+from util import random_banner
 
 # empty array
 arr = []
@@ -34,7 +35,7 @@ def index():
     animal2['html_summary'] = md(animal2['BriefSummary'])
     animal3['html_summary'] = md(animal3['BriefSummary'])
 
-    return render_template('index.html', animal=animal, animal2=animal2, animal3=animal3)
+    return render_template('index.html', animal=animal, animal2=animal2, animal3=animal3, banner=random_banner())
 
 
 @app.route("/glossary")

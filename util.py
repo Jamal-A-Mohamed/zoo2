@@ -10,6 +10,7 @@ import os
 from pathlib2 import Path
 from PIL import Image
 import PIL
+from random import choice
 
 
 def load_json(path):
@@ -43,3 +44,9 @@ def resize_image(fp, width_target=480, file_out=None):
         print(e)
 
 
+def random_banner():
+    cwd = Path.cwd()
+    banner_dir = cwd / "Static" / "banners"
+
+    banners = [path_ for path_ in banner_dir.glob('*.png')]
+    return choice(banners).name
