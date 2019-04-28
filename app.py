@@ -7,6 +7,14 @@ from flask import Flask, redirect, render_template, request, session, url_for, a
 from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
+from util import random_banner
+import re
+
+# regex for heading substitution (BriefSummary => Brief Summary)
+camel_re = re.compile(r'(?!^)(?=[A-Z])')
+
+
+
 
 UPLOAD_FOLDER = os.getcwd() + '/Static/Images'
 ALLOWED_EXTENSIONS = ('png', 'jpg', 'jpeg', 'gif')
@@ -17,7 +25,7 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/zoo"
 app.secret_key = 'mysecret'
 mongo = PyMongo(app)
 collection = mongo.db["animals"]
-from util import random_banner
+
 
 # empty array
 arr = []
@@ -254,8 +262,9 @@ def form2dict(form, image=None, addName=True):
 
 
 def md(text, header=None, heading='h2'):
+    print(camel_re.sub(" ", header))
     if header and heading in ('h1', 'h2', 'h3', 'h4'):
-        return f'<{heading}>{header}</{heading}>' + markdown(text)
+        return f'<{heading}>{camel_re.sub(" ", header)}</{heading}>' + markdown(text)
     return markdown(text)
 
 def get_animals_from_classification(level, classification):
