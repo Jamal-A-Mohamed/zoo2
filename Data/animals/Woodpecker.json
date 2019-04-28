@@ -10,5 +10,6 @@
         "Class": "Aves",
         "Order": "Piciformes",
         "Family": "PicidaeLeach"
-    }
+    },
+    "Zone": "* #### C"
 }
