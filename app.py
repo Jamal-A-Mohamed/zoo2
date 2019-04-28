@@ -40,8 +40,23 @@ def index():
 
 @app.route("/glossary")
 def glossary():
-    return render_template('glossary.html', animal_list=animal_list)
+    return render_template('glossary.html', animal_list=animal_list, category="animals")
 
+
+@app.route("/reptiles")
+def reptiles():
+    reptile_list = get_animals_from_classification(level="Class", classification="Reptilia")
+    return render_template('glossary.html', animal_list=reptile_list, category="reptiles")
+
+@app.route("/birds")
+def theword():
+    bird_list = get_animals_from_classification(level="Class", classification="Aves")
+    return render_template('glossary.html', animal_list=bird_list, category="birds")
+
+@app.route("/mammals")
+def mammals():
+    mammal_list = get_animals_from_classification(level="Phylum", classification="Chordata")
+    return render_template('glossary.html', animal_list=mammal_list, category="mammals")
 
 
 @app.route("/autocomplete")
@@ -238,6 +253,12 @@ def md(text, header=None, heading='h2'):
     if header and heading in ('h1', 'h2', 'h3', 'h4'):
         return f'<{heading}>{header}</{heading}>' + markdown(text)
     return markdown(text)
+
+def get_animals_from_classification(level, classification):
+
+    key = f"Taxonomy.{level}"
+    value = classification
+    return [animal['CommonName'] for animal in collection.find({key:value})]
 
 
 if __name__ == '__main__':
