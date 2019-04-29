@@ -3,12 +3,14 @@
 import bcrypt
 import os
 from random import choice
-from flask import Flask, redirect, render_template, request, session, url_for, abort, Response, json
+from flask import Flask, redirect, render_template, request, session, url_for, abort, Response, json, make_response
 from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
 from util import random_banner
 import re
+from bleach import clean
+from functools import wraps
 
 # regex for heading substitution (BriefSummary => Brief Summary)
 camel_re = re.compile(r'(?!^)(?=[A-Z])')
@@ -18,6 +20,8 @@ camel_re = re.compile(r'(?!^)(?=[A-Z])')
 
 UPLOAD_FOLDER = os.getcwd() + '/Static/Images'
 ALLOWED_EXTENSIONS = ('png', 'jpg', 'jpeg', 'gif')
+
+SESSION_COOKIE_SECURE = True
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -36,12 +40,63 @@ arr = []
 animaltoGet = {'CommonName': "Addax"}
 animal_list = list(sorted([animal['CommonName'] for animal in collection.find({})]))
 
+
+def add_response_headers(headers={}):
+    """This decorator adds the headers passed in to the response"""
+    def decorator(f):
+        @wraps(f)
+        def decorated_function(*args, **kwargs):
+            resp = make_response(f(*args, **kwargs))
+            h = resp.headers
+            for header, value in headers.items():
+                h[header] = value
+            return resp
+        return decorated_function
+    return decorator
+
+
+def noindex(f):
+    """This decorator passes X-Robots-Tag: noindex"""
+    @wraps(f)
+    @add_response_headers({'X-Robots-Tag': 'noindex'})
+    def decorated_function(*args, **kwargs):
+        return f(*args, **kwargs)
+    return decorated_function
+
+def XXSSP(f):
+    """This decorator passes X-XSS-Protection: 1"""
+    @wraps(f)
+    @add_response_headers({'X-XSS-Protection': 1})
+    def decorated_function(*args, **kwargs):
+        return f(*args, **kwargs)
+    return decorated_function
+
+def HSTS(f):
+    """This decorator passes X-XSS-Protection: 1"""
+    @wraps(f)
+    @add_response_headers({'Strict-Transport-Security': "max-age=31536000; includeSubdomains;"})
+    def decorated_function(*args, **kwargs):
+        return f(*args, **kwargs)
+    return decorated_function
+
+def secure_headers(f):
+    """This decorator passes X-XSS-Protection: 1"""
+    @wraps(f)
+    @add_response_headers({'X-XSS-Protection': 1})
+    @add_response_headers({'X-Content-Type-Options': "nosniff"})
+    @add_response_headers({'X-Frame-Options': "deny"})
+    def decorated_function(*args, **kwargs):
+        return f(*args, **kwargs)
+    return decorated_function
+
 @app.route("/Static/{etc}")
 def static123(etc):
     return redirect(f"{static_site}/Static/{etc}")
 
 
 @app.route("/")
+@secure_headers
+@HSTS
 def index():
     animal = collection.find_one({'CommonName': choice(animal_list)})
     animal2 = collection.find_one({'CommonName': choice(animal_list)})
@@ -269,8 +324,8 @@ def form2dict(form, image=None, addName=True):
 
 def md(text, header=None, heading='h2'):
     if header and heading in ('h1', 'h2', 'h3', 'h4'):
-        return f'<{heading}>{str(camel_re.sub(" ", header))}</{heading}>' + markdown(text)
-    return markdown(text)
+        return f'<{heading}>{str(camel_re.sub(" ", header))}</{heading}>' + markdown(clean(text))
+    return markdown(clean(text))
 
 def get_animals_from_classification(level, classification):
 
