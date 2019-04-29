@@ -109,21 +109,29 @@ def index():
 
 
 @app.route("/glossary")
+@secure_headers
+@HSTS
 def glossary():
     return render_template('glossary.html', animal_list=animal_list, category="animals")
 
 
 @app.route("/reptiles")
+@secure_headers
+@HSTS
 def reptiles():
     reptile_list = get_animals_from_classification(level="Class", classification="Reptilia")
     return render_template('glossary.html', animal_list=reptile_list, category="reptiles")
 
 @app.route("/birds")
+@secure_headers
+@HSTS
 def theword():
     bird_list = get_animals_from_classification(level="Class", classification="Aves")
     return render_template('glossary.html', animal_list=bird_list, category="birds")
 
 @app.route("/mammals")
+@secure_headers
+@HSTS
 def mammals():
     mammal_list = get_animals_from_classification(level="Phylum", classification="Chordata")
     return render_template('glossary.html', animal_list=mammal_list, category="mammals")
@@ -134,6 +142,8 @@ def autcomplete() :
     return render_template('autocomplete.html', animal_list=animal_list)
 
 @app.route('/search', methods=['POST', 'GET'])
+@secure_headers
+@HSTS
 def search():
     if request.method == 'POST':
         return redirect(url_for('animal_page', animal_name=request.form['animalname']))
@@ -172,6 +182,8 @@ def random_animal():
 
 
 @app.route('/animal/<animal_name>')
+@secure_headers
+@HSTS
 def animal_page(animal_name):
     if animal_name is None:
         abort(404)
@@ -195,6 +207,8 @@ def animal_page(animal_name):
 
 
 @app.route('/login', methods=['POST', 'GET'])
+@secure_headers
+@HSTS
 def login():
     if 'username' in session:
         return "User already logged in"
@@ -218,6 +232,8 @@ def login():
 
 
 @app.route('/logout')
+@secure_headers
+@HSTS
 def logout():
     # remove the username from the session if it is there
     if 'username' in session:
@@ -228,6 +244,8 @@ def logout():
 
 
 @app.route('/register', methods=['POST', 'GET'])
+@secure_headers
+@HSTS
 def register():
     if request.method == 'POST':
         if (request.form['username'] == ""):
@@ -253,6 +271,8 @@ def register():
 
 
 @app.route('/edit/<animal_name>', methods=['POST', 'GET'])
+@secure_headers
+@HSTS
 def edit_animal(animal_name):
     animals = mongo.db.animals
     animal = animals.find_one({'CommonName': animal_name})
@@ -278,6 +298,8 @@ def edit_animal(animal_name):
 
 
 @app.route('/edit', methods=['POST', 'GET'])
+@secure_headers
+@HSTS
 def edit():
     if request.method == 'GET':
         # if session['username'] is not None:
