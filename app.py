@@ -130,7 +130,8 @@ def animal_page(animal_name):
         if field in animal:
             animal[field] = md(animal[field], field)
 
-    animal["attribution"] = wiki_attribution(animal["Source"])
+    if "Source" in animal:
+        animal["attribution"] = wiki_attribution(animal["Source"])
 
     carenotes = None
     if "Carenotes" in animal:
