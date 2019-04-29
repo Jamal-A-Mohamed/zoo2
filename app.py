@@ -9,7 +9,6 @@ from markdown import markdown
 from werkzeug.utils import secure_filename
 from util import random_banner
 import re
-from flask_talisman import Talisman
 
 # regex for heading substitution (BriefSummary => Brief Summary)
 camel_re = re.compile(r'(?!^)(?=[A-Z])')
@@ -21,7 +20,6 @@ UPLOAD_FOLDER = os.getcwd() + '/Static/Images'
 ALLOWED_EXTENSIONS = ('png', 'jpg', 'jpeg', 'gif')
 
 app = Flask(__name__)
-Talisman(app)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config["MONGO_URI"] = "mongodb://localhost:27017/zoo"
 app.secret_key = 'mysecret'
