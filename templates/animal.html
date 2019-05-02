@@ -1,12 +1,15 @@
 {% extends "layout.html" %}
 {% block body %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{animal.CommonName}}</h1>
+     <h3 class="display-3"> {{ animal.ScientificName }}</h3>
+        <hr class="my-4">
 
-    <h1>{{animal.CommonName}}</h1>
+    <p class="lead"> {{animal.BriefSummary | safe}}</p>
 
-    <h4><i>{{ animal.ScientificName }}</i></h4>
-    <img class="img-thumbnail" src={{ static_site }}/Static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
-             , height="325">
-    {{animal.BriefSummary | safe}}
+      <img src=http://3.89.175.127/Static/Images/{{ animal.ImageURL }}, class="img-fluid" alt={{ animal.CommonName }}>
+
 
     {{ animal.FunFacts | safe }}
 

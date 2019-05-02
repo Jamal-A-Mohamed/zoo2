@@ -137,9 +137,7 @@ def mammals():
     return render_template('glossary.html', animal_list=mammal_list, category="mammals")
 
 
-@app.route("/autocomplete")
-def autcomplete() :
-    return render_template('autocomplete.html', animal_list=animal_list)
+
 
 @app.route('/search', methods=['POST', 'GET'])
 @secure_headers
@@ -148,28 +146,17 @@ def search():
     if request.method == 'POST':
         return redirect(url_for('animal_page', animal_name=request.form['animalname']))
 
-#
-# @app.route('/autocomplete', methods=['GET'])
-# def autocomplete() :
-#     search = request.args.get('q')
-#     print(search)
-#
-#     if search and len(search) >= 3:
-#         results = [animal for animal in animal_list if search in animal]
-#         print(results)
-#         return jsonify(matching_results=results)
-#     return "NOTHING IN THE SEARCH BAR"
 
 
 
-@app.route('/animalname', methods=['GET'])
+
+@app.route('/autocomplete', methods=['GET'])
 def autocomplete() :
     search = request.args.get('animalname')
 
     app.logger.debug(search)
     print(search)
 
-    print(Response(json.dumps(NAMES)))
     return Response(json.dumps(animal_list), mimetype='application/json')
 
 

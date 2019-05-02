@@ -10,14 +10,15 @@
     <meta name="author" content="">
 
     <title></title>
-    <link href="//code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
-    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="//code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
 
     <!--- local Jquery--->
@@ -37,49 +38,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    {# <script>#}
-    {#  $( function() {#}
-    {#    var availableTags = [#}
-    {#      "ActionScript",#}
-    {#      "AppleScript",#}
-    {#      "Asp",#}
-    {#      "BASIC",#}
-    {#      "C",#}
-    {#      "C++",#}
-    {#      "Clojure",#}
-    {#      "COBOL",#}
-    {#      "ColdFusion",#}
-    {#      "Erlang",#}
-    {#      "Fortran",#}
-    {#      "Groovy",#}
-    {#      "Haskell",#}
-    {#      "Java",#}
-    {#      "JavaScript",#}
-    {#      "Lisp",#}
-    {#      "Perl",#}
-    {#      "PHP",#}
-    {#      "Python",#}
-    {#      "Ruby",#}
-    {#      "Scala",#}
-    {#      "Scheme"#}
-    {#    ];#}
-    {#    $( "#tags" ).autocomplete({#}
-    {#      source: availableTags#}
-    {#    });#}
-    {#  } );#}
-    {#  </script>#}
 
 
-    <script>
-        $(function () {
+
+<script>
+    $(function() {
         $.ajax({
             url: '{{ url_for("autocomplete") }}'
-        }).done(function (data) {
-            $('#autocomplete').autocomplete({
-                source: data,
-                minLength: 2
+            }).done(function (data){
+                $('#autocomplete').autocomplete({
+                    source: data,
+                    minLength: 2
+                });
             });
-        });
         });
 </script>
 
@@ -114,13 +85,19 @@
             </ul>
         </div>
 
-        <form class="form-inline my-2 my-lg-0" method=POST action="{{ url_for('search') }}">
+       <form class="form-inline my-2 my-lg-0"  method=POST action="{{ url_for('search') }}">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"
                    name="animalname" id="autocomplete">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 
 
         </form>
+
+
+
+
+
+
 
 
     </div>
@@ -137,19 +114,4 @@
 
 </body>
 
-<script>
-    $(function () {
-        $.ajax({
-            url: '{{ url_for("autocomplete") }}'
-        }).done(function (data) {
-            $('#autocomplete').autocomplete({
-                source: data,
-                minLength: 2
-
-            });
-
-
-        });
-    });
-</script>
 </html>
