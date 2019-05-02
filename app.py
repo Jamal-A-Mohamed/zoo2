@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 
-import bcrypt
 import os
+import re
+from functools import wraps
 from random import choice
+
+import bcrypt
+from bleach import clean
 from flask import Flask, redirect, render_template, request, session, url_for, abort, Response, json, make_response
 from flask_pymongo import PyMongo
 from markdown import markdown
 from werkzeug.utils import secure_filename
+
 from util import random_banner
-import re
-from bleach import clean
-from functools import wraps
 
 # regex for heading substitution (BriefSummary => Brief Summary)
 camel_re = re.compile(r'(?!^)(?=[A-Z])')
@@ -137,17 +139,12 @@ def mammals():
     return render_template('glossary.html', animal_list=mammal_list, category="mammals")
 
 
-
-
 @app.route('/search', methods=['POST', 'GET'])
 @secure_headers
 @HSTS
 def search():
     if request.method == 'POST':
         return redirect(url_for('animal_page', animal_name=request.form['animalname']))
-
-
-
 
 
 @app.route('/autocomplete', methods=['GET'])
