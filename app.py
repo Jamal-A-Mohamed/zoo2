@@ -242,7 +242,7 @@ def register():
         if existing_user is None:
             hashpass = bcrypt.hashpw(request.form['pass'].encode('utf-8'), bcrypt.gensalt())
             users.insert(
-                {'name': request.form['username'], 'password': hashpass, 'firstname': request.form['firstname'], \
+                {'name' : request.form['username'], 'password' : hashpass, 'firstname' : request.form['firstname'],
                  'lastname': request.form['lastname']})
             session['username'] = request.form['username']
 
@@ -347,6 +347,4 @@ def wiki_attribution(source_url):
 if __name__ == '__main__':
     app.secret_key = 'JR4WRBQUR6SDKuPTjrkCGBJ2UFF2TXxqhh'
     app.run(ssl_context=('cert.pem','key.pem'), host="0.0.0.0", port=5002)
-    # app.run(host="0.0.0.0", port=5002)
-    # app.run(host="127.0.0.1", port=5000)
 
