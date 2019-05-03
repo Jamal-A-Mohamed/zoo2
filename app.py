@@ -33,7 +33,7 @@ mongo = PyMongo(app)
 collection = mongo.db["animals"]
 
 
-static_site = "https://3.214.189.209"
+static_site = "https://ninth.site"
 
 
 # empty array
