@@ -1,28 +1,12 @@
 {% extends "layout.html" %}
 {% block body %}
 
-    <div class="jumbotron justify-content-center">
+    <h1>{{animal.CommonName}}</h1>
 
-        <div class="card-body">
-		<div class="clearfix vertical-center">
-             <div class="float-lg-left">
-            <img src="https://ninth.site/Static/Images/{{ animal.ImageURL }}"
-		 alt={{ animal.CommonName }}> </div>
-	     
-	     <div class="jumbotron vertical-center">
-	     <div class="container">
-		     
-            <h1 class="display-4"> &nbsp;{{animal.CommonName}}</h1>
-     <h3 class="display-3"> &nbsp;{{ animal.ScientificName }}</h3>
-		</div>
-		</div>
-		</div>
-     
-     <hr class="my-4">
-
-    <p class="lead"> {{animal.BriefSummary | safe}}</p>
-
-
+    <h4><i>{{ animal.ScientificName }}</i></h4>
+    <img class="img-thumbnail" src=http://3.89.175.127:80/Static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
+             , height="325">
+    {{animal.BriefSummary | safe}}
 
     {{ animal.FunFacts | safe }}
 
@@ -60,7 +44,7 @@
 {#    <input type="text" name="Notes" size="60" value="{{ carenotes.Notes }}"><br><br>#}
 
     <br><br><br><br>
-{{ animal.attribution | safe }} {#TODO: Move attribution to footer#}
-  </div>
-</div>
+{{ animal.attribution | safe }} 
+{#TODO: Move attribution to footer#}
+
 {% endblock %}
