@@ -1,14 +1,18 @@
 {% extends "layout.html" %}
 {% block body %}
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">{{animal.CommonName}}</h1>
+
+    <div class="jumbotron justify-content-center">
+
+        <div class="card-body">
+            <img src="https://ninth.site/Static/Images/{{ animal.ImageURL }}" class="card-img"
+                 alt={{ animal.CommonName }}>
+
+            <h1 class="display-4">{{animal.CommonName}}</h1>
      <h3 class="display-3"> {{ animal.ScientificName }}</h3>
         <hr class="my-4">
 
     <p class="lead"> {{animal.BriefSummary | safe}}</p>
 
-      <img src=http://3.89.175.127/Static/Images/{{ animal.ImageURL }}, class="img-fluid" alt={{ animal.CommonName }}>
 
 
     {{ animal.FunFacts | safe }}
