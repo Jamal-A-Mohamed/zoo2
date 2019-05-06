@@ -4,16 +4,13 @@
     <div class="jumbotron justify-content-center">
 
         <div class="card-body">
-		<div class="clearfix vertical-center">
-             <div class="float-lg-left">
-            <img src="https://ninth.site/Static/Images/{{ animal.ImageURL }}"
-		 alt={{ animal.CommonName }} style="padding-right:20px;"> </div>
-	     
-            <h4 class="display-4" style="padding:20px;">{{animal.CommonName}}</h1>
-     <h3 class="display-3" style="padding:20px;"> {{ animal.ScientificName }}</h3>
-		</div>
-     
-     <hr class="my-4">
+
+            <h1 class="display-4">{{animal.CommonName}}</h1>
+     <h3 class="display-3"> {{ animal.ScientificName }}</h3>
+            <img src="https://ninth.site/Static/Images/{{ animal.ImageURL }}" class="card-img"
+                 alt={{ animal.CommonName }}>
+
+            <hr class="my-4">
 
     <p class="lead"> {{animal.BriefSummary | safe}}</p>
 
