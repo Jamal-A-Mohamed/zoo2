@@ -139,12 +139,29 @@ def mammals():
     return render_template('glossary.html', animal_list=mammal_list, category="mammals")
 
 
+
+@app.route("/results/<name_searched>")
+@secure_headers
+@HSTS
+def search_results(name_searched):
+    print(name_searched)
+    results_list = [animal['CommonName'] for animal in collection.find({"CommonName":{"$regex": f'.*({name_searched}).*'}})]
+    results_list += [animal['CommonName'] for animal in collection.find({"ScientificName":{"$regex": f'.*({name_searched}).*'}})]
+    print(results_list)
+    results_list = list(sorted(set(results_list)))
+    return render_template('glossary.html', animal_list=results_list, category="Search Results")
+
+
 @app.route('/search', methods=['POST', 'GET'])
 @secure_headers
 @HSTS
 def search():
     if request.method == 'POST':
-        return redirect(url_for('animal_page', animal_name=request.form['animalname']))
+        entry = request.form['animalname']
+        if entry in animal_list:
+            return redirect(url_for('animal_page', animal_name=entry))
+        else:
+            return redirect(url_for('search_results', name_searched=entry))
 
 
 @app.route('/autocomplete', methods=['GET'])
