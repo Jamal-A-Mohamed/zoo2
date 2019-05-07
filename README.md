@@ -1,6 +1,7 @@
 # Zoo
 
 ### [Link to website](https://ninth.site:5002/)
+ * Examples of Animal Pages: [Addax](https://ninth.site:5002/animal/Addax) [Serval](https://ninth.site:5002/animal/Serval)
 
 A class project in database design for implementing a NoSQL DB Project.  Some of technologies used:
 * MongoDB
