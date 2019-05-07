@@ -13,7 +13,8 @@ import re
 import string
 
 
-
+proper_name = re.compile('[A-Z][a-z]+')
+common_name = re.compile('[a-z]+')
 
 def main():
     cwd = Path.cwd()
@@ -65,14 +66,17 @@ def get_wiki_taxonomy(url):
         for i in range(len(rows)-1):
             if rows[i] in classifications:
                 entry = rows[i+1]
-                class_dict[rows[i][:-1]] = fix_comma(entry)
+                class_dict[rows[i][:-1]] = fix_extra(fix_comma(entry))
     except Exception:
         pass
 
     # quickfix some problems
     # species can have genus abbreviation, we will remove here
-    if 'Species' in class_dict:
-            class_dict['Species'] = get_lowercase(class_dict['Species'])
+    for key, value in class_dict.items():
+        if key == 'Species':
+                class_dict['Species'] = get_lowercase(value)
+        else:
+                class_dict[key] = value.split(' ')[0]
     return class_dict
 
 
@@ -83,8 +87,17 @@ def get_lowercase(in_str):
 
 def fix_comma(in_str):
     if ',' in in_str:
-        return in_str.split(',')[0]
+        in_str = in_str.split(',')[0]
     return in_str
+
+# regex for heading substitution (BriefSummary => Brief Summary)
+camel_re = re.compile(r'(?!^)(?=[A-Z])')
+
+def fix_extra(in_str):
+    """remove extra Name in wikibox for attribution of classification"""
+    spaced = camel_re.sub("_", in_str)
+    return spaced.split("_")[0]
+
 
 
 if __name__ == '__main__':
