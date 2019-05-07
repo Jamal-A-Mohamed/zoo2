@@ -21,6 +21,6 @@ This project creates an informational Zoo website for aiding in managing Zoo kee
 5. ...and more
 
 
-## Some Documentation for installing
+## Some Documentation for installing and project information
 
-* [doc/](https://github.com/ninexball/Zoo/tree/master/docs)
+* [docs/](https://github.com/ninexball/Zoo/tree/master/docs)
