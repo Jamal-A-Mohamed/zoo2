@@ -1,0 +1,62 @@
+﻿4/9 - Worked on project as a group
+* Created schemas for animal and user
+
+
+4/13 Caribou (Jamal’s Choice)
+
+
+
+
+Daniel - added scripts to download animals and create json of animal
+Add script to download images
+Add script to download taxonomy data
+Add script to add json to mongodb
+Jamal - created login page,Registration page,index page, set up project structure including Static folder, 
+
+
+4/20 Dunn Bros (Daniel’s Choice)
+Jamal - Completed registration ,login and implemented  sessions.
+Daniel - Add edit animal page
+Daniel - add random animal that redirects to a random animal
+
+
+
+
+
+
+4/27 - Worked on project at Caribou
+        Daniel: add glossary of animals
+update and fix some links
+
+
+Add some css, js for making long sections of text display in fixed size on index
+Create banner image 
+Update index and make it look better.
+Jamal - Added search functionality.
+
+
+5/5 -  Jamal 
+Animal.html : put into a jumbotron with content centered
+edit_animal.html : made content in to a jumbotron
+index.html : moved the footer to layout.html
+login.html : put the sign outside of the login card
+register.html : same as log in.
+layout.html put in the footer here 
+
+
+?/? Daniel
+Created AWS Instance
+Made domain
+Add DNS to site
+Add TLS to Flask and Apache
+Configured TLS to 1.2 1.3
+Added categories like mammals based on taxonomy
+Fixed some issues with taxonomy scraping
+
+
+5/6 Both:
+Created Presentation
+Switched to a Mobile Friendly Layout
+
+
+5/7 Presentation and Finish
