@@ -143,11 +143,13 @@ def mammals():
 @secure_headers
 @HSTS
 def search_results(name_searched):
-    print(name_searched)
+
     results_list = [animal['CommonName'] for animal in collection.find({"CommonName":{"$regex": f'.*({name_searched}).*'}})]
     results_list += [animal['CommonName'] for animal in collection.find({"ScientificName":{"$regex": f'.*({name_searched}).*'}})]
     results_list = list(sorted(set(results_list)))
-    print(results_list)
+
+    if len(results_list) == 1:
+        return redirect(url_for('animal_page', animal_name=results_list[0].replace(' ','_')))
     return render_template('glossary.html', static_site=static_site, animal_list=results_list, category="Search Results")
 
 
