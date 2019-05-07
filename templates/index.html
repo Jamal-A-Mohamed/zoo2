@@ -31,7 +31,7 @@
 
           </div>
           <div class="card-footer">
-              <a href="{{ url_for('animal_page',animal_name=animal.CommonName) }}" class="btn btn-primary">
+              <a href="{{ url_for('animal_page',animal_name=animal.CommonName.replace(' ','_')) }}" class="btn btn-primary">
                 Find Out More </a>
           </div>
         </div>
@@ -49,7 +49,7 @@
 
           </div>
           <div class="card-footer">
-              <a href="{{ url_for('animal_page',animal_name=animal2.CommonName) }}" class="btn btn-primary">
+              <a href="{{ url_for('animal_page',animal_name=animal2.CommonName.replace(' ','_')) }}" class="btn btn-primary">
                 Find Out More </a>
           </div>
         </div>
@@ -67,7 +67,7 @@
 
           </div>
           <div class="card-footer">
-              <a href="{{ url_for('animal_page',animal_name=animal3.CommonName) }}" class="btn btn-primary">
+              <a href="{{ url_for('animal_page',animal_name=animal3.CommonName.replace(' ','_')) }}" class="btn btn-primary">
                 Find Out More </a>
           </div>
         </div>

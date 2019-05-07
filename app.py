@@ -178,7 +178,7 @@ def autocomplete() :
 def random_animal():
     rand_animal = choice(animal_list)
     print(rand_animal)
-    return redirect(url_for('animal_page', animal_name=f"{rand_animal}"))
+    return redirect(url_for('animal_page', animal_name=f"{rand_animal}.replace(' ','_')"))
 
 
 @app.route('/animal/<animal_name>')
@@ -187,6 +187,7 @@ def random_animal():
 def animal_page(animal_name):
     if animal_name is None:
         abort(404)
+    animal_name = animal_name.replace('_', ' ')
     animal = collection.find_one_or_404({"CommonName": animal_name})
 
     convert_md = ('BriefSummary', 'FunFacts', "Diet", "Habitat", "Zone")
@@ -274,6 +275,7 @@ def register():
 @secure_headers
 @HSTS
 def edit_animal(animal_name):
+    animal_name = animal_name.replace('_',' ')
     animals = mongo.db.animals
     animal = animals.find_one({'CommonName': animal_name})
 

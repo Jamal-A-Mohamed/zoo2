@@ -33,7 +33,7 @@
     <input type="submit" value="Submit">
 </form>
 
-        <a href="{{ url_for('animal_page',animal_name=animal.CommonName) }}">
+        <a href="{{ url_for('animal_page',animal_name=animal.CommonName.replace(' ','_'))}}">
             page for {{ animal.CommonName }}
 </a>
 

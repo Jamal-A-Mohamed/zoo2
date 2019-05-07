@@ -19,7 +19,7 @@
 <h2>Listing of {{ category }} at the zoo:</h2>
 <ul>
 {% for animal in animal_list %}
-    <li><a href="{{ url_for('animal_page',animal_name=animal) }}"> {{ animal }}</a></li>
+    <li><a href="{{ url_for('animal_page',animal_name=animal.CommonName.replace(' ','_')) }}"> {{ animal }}</a></li>
 {% endfor %}
 
 </ul>

@@ -34,7 +34,7 @@
 
     {{ carenotes.Notes | safe }}
 
-    <a href="{{ url_for('edit_animal',animal_name=animal.CommonName) }}">
+    <a href="{{ url_for('edit_animal',animal_name=animal.CommonName.replace(' ','_')) }}">
     Edit page for {{ animal.CommonName }}
 </a>
 
