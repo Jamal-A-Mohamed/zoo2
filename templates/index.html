@@ -1,6 +1,11 @@
 {% extends "layout.html" %}
 
 {% block javascript %}
+    <script src="/Static/js/jquery.ellipsis.js"></script>
+<link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+<script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+
     <script src="{{ static_site }}/Static/js/jquery.ellipsis.js"></script>
 {% endblock %}
 
@@ -90,22 +95,12 @@
   <!-- /.container -->
 
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; WWW ZOO</p>
-        <p class="m-0 text-center"><a href="https://www.freepik.com/free-photos-vectors/banner">Banner vector created by freepik - www.freepik.com</a></p>
-    <p class="m-0 text-center text-white-50">Article text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply.</p>
-    </div>
-    <!-- /.container -->
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
 
-  <script src="{{ static_site }}/Static/vendor/jquery/jquery.min.js"></script>
-  <script src="{{ static_site }}/Static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<script>
+
+
+    <script>
     ('.box').ellipsis({
   lines: 3,             // force ellipsis after a certain number of lines. Default is 'auto'
   ellipClass: 'ellip',  // class used for ellipsis wrapper and to namespace ellip line

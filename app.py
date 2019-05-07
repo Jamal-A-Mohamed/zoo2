@@ -139,7 +139,6 @@ def mammals():
     return render_template('glossary.html', animal_list=mammal_list, category="mammals", static_site=static_site)
 
 
-
 @app.route("/results/<name_searched>")
 @secure_headers
 @HSTS
@@ -365,4 +364,3 @@ if __name__ == '__main__':
     app.secret_key = 'JR4WRBQUR6SDKuPTjrkCGBJ2UFF2TXxqhh'
     app.run(ssl_context=('fullchain.pem','privkey.pem'), host="0.0.0.0", port=5002)
     # app.run(ssl_context=('fullchain.pem','privkey.pem'))
-
