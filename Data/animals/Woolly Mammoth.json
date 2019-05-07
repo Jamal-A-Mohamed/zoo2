@@ -10,9 +10,9 @@
         "Class": "Mammalia",
         "Order": "Proboscidea",
         "Family": "Elephantidae",
-        "Genus": "\u2020Mammuthus",
-        "Species": "primigenius"
+        "Genus": "\u2020",
+        "Species": ""
     },
-    "ScientificName": "\u2020Mammuthus primigenius",
+    "ScientificName": "\u2020 ",
     "Zone": "* #### G"
 }

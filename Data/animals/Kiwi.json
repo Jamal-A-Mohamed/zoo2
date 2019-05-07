@@ -8,9 +8,9 @@
         "Kingdom": "Animalia",
         "Phylum": "Chordata",
         "Class": "Aves",
-        "Order": "ApterygiformesHaeckel",
-        "Family": "ApterygidaeGray",
-        "Genus": "ApteryxShaw"
+        "Order": "Apterygiformes",
+        "Family": "Apterygidae",
+        "Genus": "Apteryx"
     },
     "Zone": "* #### C"
 }

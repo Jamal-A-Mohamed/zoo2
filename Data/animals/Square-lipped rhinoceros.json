@@ -10,9 +10,9 @@
         "Class": "Mammalia",
         "Order": "Perissodactyla",
         "Family": "Rhinocerotidae",
-        "Genus": "CeratotheriumGray",
+        "Genus": "Ceratotherium",
         "Species": "simum"
     },
-    "ScientificName": "CeratotheriumGray simum",
+    "ScientificName": "Ceratotherium simum",
     "Zone": "* #### E"
 }

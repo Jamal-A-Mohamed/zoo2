@@ -8,8 +8,8 @@
         "Kingdom": "Animalia",
         "Phylum": "Chordata",
         "Class": "Aves",
-        "Order": "StruthioniformesLatham",
-        "Family": "StruthionidaeVigors"
+        "Order": "Struthioniformes",
+        "Family": "Struthionidae"
     },
     "Zone": "* #### D"
 }

@@ -10,9 +10,9 @@
         "Class": "Mammalia",
         "Order": "Artiodactyla",
         "Family": "Bovidae",
-        "Genus": "BoselaphusBlainville",
+        "Genus": "Boselaphus",
         "Species": "tragocamelus"
     },
-    "ScientificName": "BoselaphusBlainville tragocamelus",
+    "ScientificName": "Boselaphus tragocamelus",
     "Zone": "* #### F"
 }

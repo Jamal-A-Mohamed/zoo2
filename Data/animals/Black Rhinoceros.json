@@ -10,9 +10,9 @@
         "Class": "Mammalia",
         "Order": "Perissodactyla",
         "Family": "Rhinocerotidae",
-        "Genus": "DicerosGray",
+        "Genus": "Diceros",
         "Species": "bicornis"
     },
-    "ScientificName": "DicerosGray bicornis",
+    "ScientificName": "Diceros bicornis",
     "Zone": "* #### A"
 }

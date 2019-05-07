@@ -10,9 +10,9 @@
         "Class": "Mammalia",
         "Order": "Artiodactyla",
         "Family": "Bovidae",
-        "Genus": "AntilopePallas",
+        "Genus": "Antilope",
         "Species": "cervicapra"
     },
-    "ScientificName": "AntilopePallas cervicapra",
+    "ScientificName": "Antilope cervicapra",
     "Zone": "* #### I"
 }

@@ -10,8 +10,8 @@
         "Class": "Aves",
         "Order": "Charadriiformes",
         "Suborder": "Lari",
-        "Family": "StercorariidaeGray",
-        "Genus": "StercorariusBrisson"
+        "Family": "Stercorariidae",
+        "Genus": "Stercorarius"
     },
     "Zone": "* #### D"
 }

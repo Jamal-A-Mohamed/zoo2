@@ -11,9 +11,9 @@
         "Order": "Squamata",
         "Suborder": "Serpentes",
         "Family": "Colubridae",
-        "Genus": "ColuberLinnaeus",
+        "Genus": "Coluber",
         "Species": "constrictor"
     },
-    "ScientificName": "ColuberLinnaeus constrictor",
+    "ScientificName": "Coluber constrictor",
     "Zone": "* #### A"
 }

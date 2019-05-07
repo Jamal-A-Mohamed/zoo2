@@ -10,9 +10,9 @@
         "Class": "Aves",
         "Order": "Galliformes",
         "Family": "Numididae",
-        "Genus": "NumidaLinnaeus",
+        "Genus": "Numida",
         "Species": "meleagris"
     },
-    "ScientificName": "NumidaLinnaeus meleagris",
+    "ScientificName": "Numida meleagris",
     "Zone": "* #### J"
 }

@@ -10,9 +10,9 @@
         "Class": "Mammalia",
         "Order": "Sirenia",
         "Family": "Dugongidae",
-        "Genus": "\u2020Hydrodamalis",
-        "Species": "gigas"
+        "Genus": "\u2020",
+        "Species": ""
     },
-    "ScientificName": "\u2020Hydrodamalis gigas",
+    "ScientificName": "\u2020 ",
     "Zone": "* #### I"
 }

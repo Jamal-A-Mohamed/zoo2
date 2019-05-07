@@ -10,8 +10,8 @@
         "Class": "Aves",
         "Order": "Charadriiformes",
         "Suborder": "Charadrii",
-        "Family": "HaematopodidaeBonaparte",
-        "Genus": "HaematopusLinnaeus"
+        "Family": "Haematopodidae",
+        "Genus": "Haematopus"
     },
     "Zone": "* #### H"
 }

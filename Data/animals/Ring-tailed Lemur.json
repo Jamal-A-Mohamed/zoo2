@@ -11,9 +11,9 @@
         "Order": "Primates",
         "Suborder": "Strepsirrhini",
         "Family": "Lemuridae",
-        "Genus": "LemurLinnaeus",
+        "Genus": "Lemur",
         "Species": "catta"
     },
-    "ScientificName": "LemurLinnaeus catta",
+    "ScientificName": "Lemur catta",
     "Zone": "* #### C"
 }

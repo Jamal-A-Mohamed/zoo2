@@ -8,8 +8,8 @@
         "Kingdom": "Animalia",
         "Phylum": "Chordata",
         "Class": "Aves",
-        "Order": "ColumbiformesLatham",
-        "Family": "ColumbidaeLeach"
+        "Order": "Columbiformes",
+        "Family": "Columbidae"
     },
     "Zone": "* #### C"
 }

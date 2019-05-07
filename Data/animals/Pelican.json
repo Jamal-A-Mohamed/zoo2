@@ -9,8 +9,8 @@
         "Phylum": "Chordata",
         "Class": "Aves",
         "Order": "Pelecaniformes",
-        "Family": "PelecanidaeRafinesque",
-        "Genus": "PelecanusLinnaeus"
+        "Family": "Pelecanidae",
+        "Genus": "Pelecanus"
     },
     "Zone": "* #### C"
 }

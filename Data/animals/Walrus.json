@@ -10,9 +10,9 @@
         "Class": "Mammalia",
         "Order": "Carnivora",
         "Family": "Odobenidae",
-        "Genus": "OdobenusBrisson",
+        "Genus": "Odobenus",
         "Species": "rosmarus"
     },
-    "ScientificName": "OdobenusBrisson rosmarus",
+    "ScientificName": "Odobenus rosmarus",
     "Zone": "* #### C"
 }

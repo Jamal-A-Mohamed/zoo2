@@ -10,9 +10,9 @@
         "Class": "Aves",
         "Order": "Columbiformes",
         "Family": "Columbidae",
-        "Genus": "\u2020RaphusBrisson",
-        "Species": "cucullatus"
+        "Genus": "\u2020",
+        "Species": ""
     },
-    "ScientificName": "\u2020RaphusBrisson cucullatus",
+    "ScientificName": "\u2020 ",
     "Zone": "* #### F"
 }

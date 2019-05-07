@@ -10,10 +10,10 @@
         "Class": "Reptilia",
         "Order": "Testudines",
         "Suborder": "Cryptodira",
-        "Family": "CarettochelyidaeBoulenger",
-        "Genus": "CarettochelysRamsay",
+        "Family": "Carettochelyidae",
+        "Genus": "Carettochelys",
         "Species": "insculpta"
     },
-    "ScientificName": "CarettochelysRamsay insculpta",
+    "ScientificName": "Carettochelys insculpta",
     "Zone": "* #### A"
 }

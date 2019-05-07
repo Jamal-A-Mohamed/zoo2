@@ -9,10 +9,10 @@
         "Phylum": "Chordata",
         "Class": "Aves",
         "Order": "Eurypygiformes",
-        "Family": "EurypygidaeSelby",
-        "Genus": "EurypygaIlliger",
+        "Family": "Eurypygidae",
+        "Genus": "Eurypyga",
         "Species": "helias"
     },
-    "ScientificName": "EurypygaIlliger helias",
+    "ScientificName": "Eurypyga helias",
     "Zone": "* #### E"
 }

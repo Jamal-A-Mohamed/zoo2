@@ -9,10 +9,10 @@
         "Phylum": "Chordata",
         "Class": "Chondrichthyes",
         "Order": "Orectolobiformes",
-        "Family": "RhincodontidaeJ. P. M\u00fcller and Henle",
-        "Genus": "RhincodonA. Smith",
+        "Family": "Rhincodontidae",
+        "Genus": "Rhincodon",
         "Species": "typus"
     },
-    "ScientificName": "RhincodonA. Smith typus",
+    "ScientificName": "Rhincodon typus",
     "Zone": "* #### E"
 }

@@ -10,9 +10,9 @@
         "Class": "Mammalia",
         "Order": "Artiodactyla",
         "Family": "Physeteridae",
-        "Genus": "PhyseterLinnaeus",
+        "Genus": "Physeter",
         "Species": "macrocephalus"
     },
-    "ScientificName": "PhyseterLinnaeus macrocephalus",
+    "ScientificName": "Physeter macrocephalus",
     "Zone": "* #### F"
 }

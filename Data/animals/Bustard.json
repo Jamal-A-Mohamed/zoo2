@@ -8,8 +8,8 @@
         "Kingdom": "Animalia",
         "Phylum": "Chordata",
         "Class": "Aves",
-        "Order": "OtidiformesWagler",
-        "Family": "OtididaeRafinesque"
+        "Order": "Otidiformes",
+        "Family": "Otididae"
     },
     "Zone": "* #### B"
 }
