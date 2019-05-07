@@ -139,18 +139,6 @@ def mammals():
     return render_template('glossary.html', animal_list=mammal_list, category="mammals", static_site=static_site)
 
 
-@app.route("/results/<name_searched>")
-@secure_headers
-@HSTS
-def search_results(name_searched):
-    print(name_searched)
-    results_list = [animal['CommonName'] for animal in collection.find({"CommonName":{"$regex": f'.*({name_searched}).*'}})]
-    results_list += [animal['CommonName'] for animal in collection.find({"ScientificName":{"$regex": f'.*({name_searched}).*'}})]
-    print(results_list)
-    results_list = list(sorted(set(results_list)))
-    return render_template('glossary.html', animal_list=results_list, category="Search Results", static_site=static_site)
-
-
 
 @app.route("/results/<name_searched>")
 @secure_headers
