@@ -1,23 +1,12 @@
 {% extends "layout.html" %}
 {% block body %}
 
-    <div class="jumbotron justify-content-center">
+    <h1>{{animal.CommonName}}</h1>
 
-        <div class="card-body">
-
-            <h1 class="display-4">{{animal.CommonName}}</h1>
-     <h3 class="display-3"> {{ animal.ScientificName }}</h3>
-            <img src="https://ninth.site/Static/Images/{{ animal.ImageURL }}" class="img-thumbnail"
-                 alt={{ animal.CommonName }}>
-
-            <hr class="my-4">
-
-    <p class="lead"> {{animal.BriefSummary | safe}}</p>
-
-
-      <img src={{ static_site }} /Static/Images/{{ animal.ImageURL }} class="img-fluid" alt={{ animal.CommonName }}>
-
-
+    <h4><i>{{ animal.ScientificName }}</i></h4>
+    <img class="img-thumbnail" src=http://3.89.175.127:80/Static/Images/{{ animal.ImageURL }} alt={{ animal.CommonName }}, width="500"
+             , height="325">
+    {{animal.BriefSummary | safe}}
 
     {{ animal.FunFacts | safe }}
 
@@ -55,12 +44,7 @@
 {#    <input type="text" name="Notes" size="60" value="{{ carenotes.Notes }}"><br><br>#}
 
     <br><br><br><br>
-{{ animal.attribution | safe }} {#TODO: Move attribution to footer#}
-  </div>
-</div>
-
-      <script src="{{ static_site }}/Static/vendor/jquery/jquery.min.js"></script>
-  <script src="{{ static_site }}/Static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+{{ animal.attribution | safe }} 
+{#TODO: Move attribution to footer#}
 
 {% endblock %}
-

@@ -151,6 +151,19 @@ def search_results(name_searched):
     return render_template('glossary.html', animal_list=results_list, category="Search Results", static_site=static_site)
 
 
+
+@app.route("/results/<name_searched>")
+@secure_headers
+@HSTS
+def search_results(name_searched):
+    print(name_searched)
+    results_list = [animal['CommonName'] for animal in collection.find({"CommonName":{"$regex": f'.*({name_searched}).*'}})]
+    results_list += [animal['CommonName'] for animal in collection.find({"ScientificName":{"$regex": f'.*({name_searched}).*'}})]
+    print(results_list)
+    results_list = list(sorted(set(results_list)))
+    return render_template('glossary.html', animal_list=results_list, category="Search Results")
+
+
 @app.route('/search', methods=['POST', 'GET'])
 @secure_headers
 @HSTS
@@ -362,5 +375,7 @@ def wiki_attribution(source_url):
 
 if __name__ == '__main__':
     app.secret_key = 'JR4WRBQUR6SDKuPTjrkCGBJ2UFF2TXxqhh'
-    app.run(ssl_context=('cert.pem','key.pem'), host="0.0.0.0", port=5002)
+    app.run(ssl_context=('fullchain.pem','privkey.pem'), host="0.0.0.0", port=5002)
+    # app.run(ssl_context=('fullchain.pem','privkey.pem'))
+
 
