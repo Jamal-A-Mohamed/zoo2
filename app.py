@@ -178,7 +178,7 @@ def autocomplete() :
 def random_animal():
     rand_animal = choice(animal_list)
     print(rand_animal)
-    return redirect(url_for('animal_page', animal_name=f"{rand_animal}.replace(' ','_')"))
+    return redirect(url_for('animal_page', animal_name=f"{rand_animal.replace(' ','_')}"))
 
 
 @app.route('/animal/<animal_name>')
