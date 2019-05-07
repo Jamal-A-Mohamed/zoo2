@@ -33,7 +33,7 @@ mongo = PyMongo(app)
 collection = mongo.db["animals"]
 
 
-static_site = "https://3.214.189.209"
+static_site = "https://ninth.site"
 
 
 # empty array
@@ -114,7 +114,7 @@ def index():
 @secure_headers
 @HSTS
 def glossary():
-    return render_template('glossary.html', animal_list=animal_list, category="animals")
+    return render_template('glossary.html', animal_list=animal_list, category="animals", static_site=static_site)
 
 
 @app.route("/reptiles")
@@ -122,21 +122,33 @@ def glossary():
 @HSTS
 def reptiles():
     reptile_list = get_animals_from_classification(level="Class", classification="Reptilia")
-    return render_template('glossary.html', animal_list=reptile_list, category="reptiles")
+    return render_template('glossary.html', animal_list=reptile_list, category="reptiles", static_site=static_site)
 
 @app.route("/birds")
 @secure_headers
 @HSTS
 def theword():
     bird_list = get_animals_from_classification(level="Class", classification="Aves")
-    return render_template('glossary.html', animal_list=bird_list, category="birds")
+    return render_template('glossary.html', animal_list=bird_list, category="birds", static_site=static_site)
 
 @app.route("/mammals")
 @secure_headers
 @HSTS
 def mammals():
     mammal_list = get_animals_from_classification(level="Phylum", classification="Chordata")
-    return render_template('glossary.html', animal_list=mammal_list, category="mammals")
+    return render_template('glossary.html', animal_list=mammal_list, category="mammals", static_site=static_site)
+
+
+@app.route("/results/<name_searched>")
+@secure_headers
+@HSTS
+def search_results(name_searched):
+    print(name_searched)
+    results_list = [animal['CommonName'] for animal in collection.find({"CommonName":{"$regex": f'.*({name_searched}).*'}})]
+    results_list += [animal['CommonName'] for animal in collection.find({"ScientificName":{"$regex": f'.*({name_searched}).*'}})]
+    print(results_list)
+    results_list = list(sorted(set(results_list)))
+    return render_template('glossary.html', animal_list=results_list, category="Search Results", static_site=static_site)
 
 
 @app.route('/search', methods=['POST', 'GET'])
@@ -144,7 +156,11 @@ def mammals():
 @HSTS
 def search():
     if request.method == 'POST':
-        return redirect(url_for('animal_page', animal_name=request.form['animalname']))
+        entry = request.form['animalname']
+        if entry in animal_list:
+            return redirect(url_for('animal_page', animal_name=entry))
+        else:
+            return redirect(url_for('search_results', name_searched=entry))
 
 
 @app.route('/autocomplete', methods=['GET'])
@@ -251,7 +267,7 @@ def register():
         return render_template('register.html', error='<div class="alert alert-danger"> Username Already exists<strong></strong>\
                         </div>')
 
-    return render_template('register.html')
+    return render_template('register.html', static_site=static_site)
 
 
 @app.route('/edit/<animal_name>', methods=['POST', 'GET'])

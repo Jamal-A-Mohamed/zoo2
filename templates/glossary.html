@@ -1,5 +1,21 @@
+
 {% extends "layout.html" %}
+
+{% block javascript %}
+    <script src="/Static/js/jquery.ellipsis.js"></script>
+<link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+<script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+
+    <script src="{{ static_site }}/Static/js/jquery.ellipsis.js"></script>
+{% endblock %}
+
+<link rel="stylesheet" href="{{ static_site }}/Static/css/heroic-features.css">
+
+
 {% block body %}
+
+    <div class="jumbotron">
 <h2>Listing of {{ category }} at the zoo:</h2>
 <ul>
 {% for animal in animal_list %}
@@ -7,5 +23,23 @@
 {% endfor %}
 
 </ul>
+</div>
+
+
+
+
+  <script src="{{ static_site }}/Static/vendor/jquery/jquery.min.js"></script>
+  <script src="{{ static_site }}/Static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    ('.box').ellipsis({
+  lines: 3,             // force ellipsis after a certain number of lines. Default is 'auto'
+  ellipClass: 'ellip',  // class used for ellipsis wrapper and to namespace ellip line
+  responsive: true      // set to true if you want ellipsis to update on window resize. Default is false
+});
+    {#('.box--responsive').ellipsis({ responsive: true });#}
+</script>
 
 {% endblock %}
+
+
