@@ -21,11 +21,13 @@ This project creates an informational Zoo website for aiding in managing Zoo kee
 5. ...and more
 
 
-## Some Documentation for installing and project information
-
-* [docs/](https://github.com/ninexball/Zoo/tree/master/docs)
 
 ## Python 3.6+ is required
 ### Dependencies can be installed:
  * Creating and activating a virtual environment is suggested.
  * $ python -m pip install -r requirements.txt
+ 
+ 
+## Additional Documentation for installing and project information
+
+* [docs/](https://github.com/ninexball/Zoo/tree/master/docs)
