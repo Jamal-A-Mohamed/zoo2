@@ -50,3 +50,8 @@ def random_banner():
 
     banners = [path_ for path_ in banner_dir.glob('*.png')]
     return choice(banners).name
+
+remove = set(r'{}[]?$.*+^|')
+
+def strip_esc(text):
+    return ''.join(ch for ch in text if ch not in remove)
