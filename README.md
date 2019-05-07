@@ -1,6 +1,6 @@
 # Zoo
 
-[Site](https://ninth.site:5002/)
+### [Link to website](https://ninth.site:5002/)
 
 A class project in database design for implementing a NoSQL DB Project.  Some of technologies used:
 * MongoDB
@@ -9,6 +9,7 @@ A class project in database design for implementing a NoSQL DB Project.  Some of
 * Encryption (TLS/BCrypt)
 * requests (downloading CC Wikipedia content)
 * Markdown for displaying data
+
 
 
 This project creates an informational Zoo website for aiding in managing Zoo keeper activities and informational guide for zoo visitors:
