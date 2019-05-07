@@ -1,0 +1,23 @@
+# launch mongo daemon
+mongod --dbpath ~/data/db/ & disown
+
+# check apache config
+sudo vi /etc/apache2/sites-enabled/000-default.conf
+
+# print out apache error logs
+cat /var/log/apache2/error.log
+
+# primitive launch of app from project folder
+python app.py & disown
+
+# add symbolic link from zoo Static files to apache public http
+sudo ln -s ~/zoo/Static/ /var/www/html/Static
+
+# remove static symbolic link if neccesary
+sudo rm /var/www/html/Static
+
+# list processes and then kill corresponding id (e.g 8001)
+ps -ef | grep python
+ps -ef | grep mongod
+ps -u user_name
+kill 8001
