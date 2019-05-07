@@ -10,7 +10,7 @@ import requests
 import shutil
 import mimetypes
 
-
+RESIZED_WIDTH = 480
 UNDOWNLOADED_URL = "https://upload.wikimedia.org"
 SMALL_SUFFIX = "_sm" # means that image has been resized to smaller
 
@@ -37,7 +37,7 @@ def main():
         if(UNDOWNLOADED_URL not in url and SMALL_SUFFIX not in url):
             img_path = cwd / 'Static' / 'Images' / url
             sm_img_path = cwd / 'Static' / 'Images' / (img_path.stem + SMALL_SUFFIX + img_path.suffix )
-            resize_image(img_path, file_out=sm_img_path)
+            resize_image(img_path, width_target=RESIZED_WIDTH, file_out=sm_img_path)
 
             animal["ImageURL"] = Path(sm_img_path).name
             save_json(animal, file)
